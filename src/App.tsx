@@ -48,7 +48,7 @@ const sectionIcon = {
 const deliveryPosture = [
   {
     title: 'No API keys required',
-    detail: 'The entire review flow is deterministic. No OpenAI, cloud LLM, or private inference endpoint is needed to demo the service.',
+    detail: 'The entire review flow is deterministic. No hosted model, cloud LLM, or private inference endpoint is needed to demo the service.',
   },
   {
     title: 'No backend dependency',
@@ -56,7 +56,7 @@ const deliveryPosture = [
   },
   {
     title: 'No external datasets',
-    detail: 'Carrier-style scenarios, alarms, and service paths are self-contained, which keeps the project reviewer-safe and easy to ship.',
+    detail: 'Carrier-style scenarios, alarms, and service paths are self-contained, which keeps the project self-contained and easy to ship.',
   },
 ] as const;
 
@@ -71,7 +71,7 @@ function App() {
       <main className="page-content">
         <section className="hero card-panel">
           <div className="hero-copy">
-            <p className="eyebrow">Carrier NW Operations Portfolio Project</p>
+            <p className="eyebrow">Carrier Network Service Assurance</p>
             <h1>NW Service Assurance Workbench</h1>
             <p className="hero-summary">
               Scenario-driven control tower for 5G access, transport, core, IDC, incident recovery,
@@ -83,10 +83,10 @@ function App() {
                 <ArrowRight aria-hidden="true" />
               </a>
               <a className="secondary-action" href="#role-fit">
-                Map this project to the role
+                Open operating map
               </a>
             </div>
-            <div className="hero-chips" aria-label="Role alignment keywords">
+            <div className="hero-chips" aria-label="Surface keywords">
               <span>5G / LTE access-core visibility</span>
               <span>Transport and IDC incident handling</span>
               <span>E2E service path review</span>
@@ -105,7 +105,7 @@ function App() {
             </div>
             <ul className="proof-points">
               <li>Turns device alarms into access, transport, core, IDC, and customer-impact decisions.</li>
-              <li>Shows incident handling, VIP path protection, and change gates in one reviewer-safe surface.</li>
+              <li>Shows incident handling, VIP path protection, and change gates in one self-contained surface.</li>
               <li>Uses AX support for classification, prioritization, and quality operations instead of generic chat UX.</li>
             </ul>
           </aside>
@@ -128,7 +128,7 @@ function App() {
               </div>
             </div>
             <p className="section-copy">
-              Every scenario is deterministic and reviewer-safe, but the decision language stays close to a carrier NOC:
+              Every scenario is deterministic and self-contained, but the decision language stays close to a carrier NOC:
               access, transport, core, IDC, SLA, reroute, maintenance, and premium customer protection.
             </p>
           </div>
@@ -163,10 +163,10 @@ function App() {
             />
           </div>
 
-          <div className="reviewer-note-box">
-            <p className="section-kicker">Recruiter fast take</p>
+          <div className="operator-note-box">
+            <p className="section-kicker">Operator fast take</p>
             <ul>
-              {activeScenario.recruiterNotes.map((note) => (
+              {activeScenario.operatorNotes.map((note) => (
                 <li key={note}>{note}</li>
               ))}
             </ul>
@@ -184,7 +184,7 @@ function App() {
             </div>
             <p className="section-copy">
               This project is intentionally self-contained so you can ship it fast for the application. It does not need
-              another backend, model key, or external data source to work as a credible portfolio proof.
+              another backend, model key, or external data source to work as a credible local proof.
             </p>
           </div>
           <div className="delivery-grid">
@@ -233,7 +233,7 @@ function App() {
             icon={sectionIcon.alarms}
             kicker="Alarm queue"
             title="Prioritized incident triage"
-            copy="The table is intentionally action-first: severity, impact, owner, and next move. That makes it easier to discuss operational judgment in interviews."
+            copy="The table is intentionally action-first: severity, impact, owner, and next move. That makes it easier to discuss operational judgment in system walkthroughs."
           >
             <div className="alarm-table" role="table" aria-label="Prioritized alarm queue">
               <div className="alarm-table-header" role="row">
@@ -252,7 +252,7 @@ function App() {
             icon={sectionIcon.timeline}
             kicker="Command log"
             title="Recovery timeline"
-            copy="A carrier operations role is not only about detecting faults. It is about deciding, communicating, protecting customers, and reopening clean operating windows."
+            copy="Carrier operations are not only about detecting faults. They are about deciding, communicating, protecting customers, and reopening clean operating windows."
           >
             <div className="timeline-list">
               {activeScenario.timeline.map((entry) => (
@@ -266,7 +266,7 @@ function App() {
           <CardSection
             icon={sectionIcon.runbook}
             kicker="Operator runbook"
-            title="Interview-friendly recovery steps"
+            title="Recovery steps with clear ownership"
             copy="This makes the service feel less like a static dashboard and more like an operational product. Each step ties technical judgment to owner responsibility and expected outcome."
           >
             <div className="runbook-list">
@@ -278,9 +278,9 @@ function App() {
 
           <CardSection
             icon={sectionIcon.application}
-            kicker="Application pack"
-            title="Use this directly in your resume and interview"
-            copy="These are the exact lines you can lift into your self-introduction, portfolio walkthrough, or role-specific resume bullets."
+            kicker="Operations pack"
+            title="Exportable operations notes"
+            copy="Reusable notes for handoff summaries, architecture reviews, and system walkthroughs."
           >
             <div className="application-list">
               {activeScenario.applicationAssets.map((asset) => (
@@ -306,9 +306,9 @@ function App() {
 
           <CardSection
             icon={sectionIcon.roleFit}
-            kicker="Role fit"
-            title="Why this maps to the posting"
-            copy="This section keeps the project from drifting into generic DevOps or generic AI territory. It stays anchored to the actual network operations lane."
+            kicker="Capability fit"
+            title="Capabilities this surface demonstrates"
+            copy="This section keeps the system from drifting into generic DevOps or generic AI territory. It stays anchored to the network operations lane."
             id="role-fit"
           >
             <div className="role-fit-list">

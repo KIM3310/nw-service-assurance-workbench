@@ -4,11 +4,11 @@ import { describe, expect, it } from 'vitest';
 import App from '../App';
 
 describe('NW Service Assurance Workbench', () => {
-  it('renders the role-focused hero copy', () => {
+  it('renders the surface-focused hero copy', () => {
     render(<App />);
     expect(screen.getByText('NW Service Assurance Workbench')).toBeInTheDocument();
-    expect(screen.getByText('Carrier NW Operations Portfolio Project')).toBeInTheDocument();
-    expect(screen.getByText('Map this project to the role')).toBeInTheDocument();
+    expect(screen.getByText('Carrier Network Service Assurance')).toBeInTheDocument();
+    expect(screen.getByText('Open operating map')).toBeInTheDocument();
     expect(screen.getByText('No extra resources required')).toBeInTheDocument();
   });
 

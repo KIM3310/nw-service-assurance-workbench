@@ -1,6 +1,6 @@
 # NW Service Assurance Workbench
 
-Scenario-driven carrier network operations portfolio project focused on 5G/LTE access-core visibility, transport and IDC incident handling, service-quality review, and AX-assisted NOC playbooks.
+Scenario-driven carrier network operations system project focused on 5G/LTE access-core visibility, transport and IDC incident handling, service-quality review, and AX-assisted NOC playbooks.
 
 ## Resource posture
 
@@ -12,25 +12,25 @@ No other resources are required to ship or demo this project well.
 - no external dataset
 - no model provider dependency
 
-That is intentional. The project is designed to be a fast, self-contained portfolio proof for a carrier NW application, not a setup-heavy demo that breaks in review.
+That is intentional. The project is designed to be a fast, self-contained local proof for a carrier NW application, not a setup-heavy demo that breaks in review.
 
-## Hiring Fit And Proof Boundary
+## Operational Proof Boundary
 
-- **Best fit roles:** carrier network operations, service assurance, NOC, transport/core operations, network quality improvement
-- **Strongest proof:** one reviewer-safe control surface that ties access, transport, core, IDC, enterprise SLA risk, and change discipline together
+- **Best fit surfaces:** carrier network operations, service assurance, NOC, transport/core operations, network quality improvement
+- **Strongest proof:** one self-contained control surface that ties access, transport, core, IDC, enterprise SLA risk, and change discipline together
 - **What is real here:** the operations framing, incident workflow, E2E visibility model, premium-path protection logic, and AX-assisted playbook surfaces
-- **What is bounded here:** scenarios are synthetic and deterministic; this is a portfolio-safe operational simulation, not a live carrier network
+- **What is bounded here:** scenarios are synthetic and deterministic; this is a system-safe operational simulation, not a live carrier network
 
 ## Why this project exists
 
-This repo is designed to make one hiring story obvious:
+This repo is designed to make one operational story explicit:
 
-1. I understand **network operations language**, not just generic cloud dashboards.
-2. I can translate **incident handling and service-quality thinking** into a reviewer-readable product surface.
-3. I can use **AX/automation** to reduce operational noise without hiding the operator decision boundary.
-4. I can connect **military-style operational discipline** and existing reliability projects to a commercial carrier NOC context.
+1. Network operations language should stay visible, not collapse into generic cloud dashboard copy.
+2. Incident handling and service-quality thinking should become an inspectable product surface.
+3. AX/automation should reduce operational noise without hiding the operator decision boundary.
+4. Operational discipline should connect to a commercial carrier NOC context through concrete workflows.
 
-## What the reviewer sees
+## What the operator sees
 
 - **Scenario board:** three realistic operations lanes
   - steady-state evening peak
@@ -42,10 +42,10 @@ This repo is designed to make one hiring story obvious:
 - **Command log:** recovery timeline and decision flow
 - **AX assist board:** automation used for classification, prioritization, reroute help, and change gates
 - **Runbook board:** owner-based recovery steps that read like an operator playbook
-- **Application pack:** 30-second pitch, resume bullet, and interview angle you can reuse directly
-- **Role-fit board:** direct mapping to job-posting themes like 장애 관리, 품질 개선, E2E 가시성, 운영 프로세스, AX 자동화
+- **Operations pack:** 30-second pitch, system note bullet, and system walkthrough angle you can reuse directly
+- **Capability board:** direct mapping to themes like 장애 관리, 품질 개선, E2E 가시성, 운영 프로세스, AX 자동화
 
-## Why it matches a carrier NW role
+## Why it matches carrier NW operations
 
 The UI and data model deliberately stay close to carrier operations concerns:
 
@@ -56,18 +56,18 @@ The UI and data model deliberately stay close to carrier operations concerns:
 - maintenance and rollback discipline
 - DDoS overlap with change governance
 
-This makes the project a better fit for a network-operations application than a generic AI or data-platform portfolio piece.
+This makes the project a better fit for a network-operations application than a generic AI or data-platform system piece.
 
-## Reviewer Fast Path
+## Operator Fast Path
 
 1. Open the default `Metro Fiber Cut Recovery` scenario.
 2. Read `Command focus` and `Operator decision`.
 3. Check the domain board for transport/core/IDC blast radius.
 4. Follow the E2E path to the VIP customer outcome.
 5. Scan the alarm queue and timeline.
-6. Finish on `Why this maps to the posting`.
+6. Finish on the capability board.
 
-If a reviewer only has 90 seconds, this path shows service assurance, 장애 대응, and 운영 자동화 thinking quickly.
+If the walkthrough is short, this path shows service assurance, 장애 대응, and 운영 자동화 thinking quickly.
 
 ## Quick Start
 
@@ -111,7 +111,7 @@ src/
   test/                UI and utility tests
 ```
 
-## Interview Positioning
+## Technical review Positioning
 
 Use this repo like this:
 

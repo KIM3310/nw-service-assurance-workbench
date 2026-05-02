@@ -225,11 +225,11 @@ export const scenarios: Scenario[] = [
         text: '이 시나리오는 통신사 NW 운영에서 중요한 안정 운영, 유지보수 게이트, VIP 고객 보호를 한 화면에서 보여줍니다. Access, transport, core, IDC를 따로 보지 않고 서비스 영향까지 연결해 보는 방식이 핵심입니다.',
       },
       {
-        label: 'Resume bullet',
-        text: 'Built a reviewer-safe service assurance board that links access, transport, core, IDC, maintenance gates, and premium customer path protection in one network-operations surface.',
+        label: 'System note bullet',
+        text: 'Built a self-contained service assurance board that links access, transport, core, IDC, maintenance gates, and premium customer path protection in one network-operations surface.',
       },
       {
-        label: 'Interview angle',
+        label: 'Technical review angle',
         text: 'I wanted to show that stable operations are not passive monitoring; they require clean baselines, disciplined maintenance gates, and customer-priority path awareness.',
       },
     ],
@@ -247,7 +247,7 @@ export const scenarios: Scenario[] = [
         proof: 'Maintenance gates, watchlist automation, and clustered alarm review reduce manual NOC load.',
       },
     ],
-    recruiterNotes: [
+    operatorNotes: [
       'Reads like a carrier NOC control surface rather than a generic cloud dashboard.',
       'Keeps networking language at the center: access, transport, core, IDC, SLA, reroute, maintenance.',
       'Shows operational judgment, not just charts: watch, decide, protect premium paths, and document the change gate.',
@@ -260,7 +260,7 @@ export const scenarios: Scenario[] = [
       'A construction-related fiber cut degrades 5G backhaul and enterprise leased-line diversity, forcing rapid reroute, field dispatch, and customer-priority handling.',
     strongestFor: '장애 대응, E2E 영향도, VIP 회선 보호를 가장 강하게 보여주는 대표 시나리오',
     commandFocus:
-      'Contain the blast radius, stabilize transport and core posture, preserve premium B2B circuits, and issue a reviewer-friendly recovery narrative.',
+      'Contain the blast radius, stabilize transport and core posture, preserve premium B2B circuits, and issue a operator-readable recovery narrative.',
     operatorDecision:
       'Shift impacted traffic to the alternate ring, reserve clean capacity for VIP circuits, dispatch field support, and freeze non-essential changes until packet loss normalizes.',
     availability: '99.217%',
@@ -301,7 +301,7 @@ export const scenarios: Scenario[] = [
       {
         label: 'Automation assist',
         value: 'Live',
-        detail: 'Reroute candidates, customer impact groups, and hold/freeze advice generated automatically.',
+        detail: 'Reroute options, customer impact groups, and hold/freeze advice generated automatically.',
         tone: 'amber',
       },
     ],
@@ -495,11 +495,11 @@ export const scenarios: Scenario[] = [
         text: '이 시나리오는 광선로 절단 상황에서 Access, transport, core, IDC, VIP 회선 영향이 어떻게 이어지는지와, 우회·현장 출동·고객 보호까지 한 번에 보여주는 장애 대응 워크플로우입니다.',
       },
       {
-        label: 'Resume bullet',
+        label: 'System note bullet',
         text: 'Designed a fiber-cut recovery control surface that turns transport faults into reroute actions, field dispatch, VIP circuit protection, and customer-impact review across access, core, and IDC domains.',
       },
       {
-        label: 'Interview angle',
+        label: 'Technical review angle',
         text: 'This is the strongest proof that I think in service-assurance terms: not just where the fault happened, but which customers are exposed, what path stays clean, and when change freeze should hold.',
       },
     ],
@@ -517,8 +517,8 @@ export const scenarios: Scenario[] = [
         proof: 'One service path connects access, transport, core, IDC, and premium enterprise outcomes.',
       },
     ],
-    recruiterNotes: [
-      'This is the strongest scenario for a carrier operations interview because the service blast radius is obvious.',
+    operatorNotes: [
+      'This is the strongest scenario for a carrier operations system walkthrough because the service blast radius is obvious.',
       'The app intentionally talks in carrier operations language: reroute, hold-down, VIP circuits, field dispatch, ingress diversity.',
       'It also translates military-style incident discipline into a commercial NOC surface without sounding generic.',
     ],
@@ -571,7 +571,7 @@ export const scenarios: Scenario[] = [
       {
         label: 'Change window recovery',
         value: '+20 min',
-        detail: 'Maintenance resumed after stable telemetry and attack-rate normalization.',
+        detail: 'Maintenance system noted after stable telemetry and attack-rate normalization.',
         tone: 'amber',
       },
     ],
@@ -657,7 +657,7 @@ export const scenarios: Scenario[] = [
         impact: 'Rollback decisions risk becoming noisy without a clean operational boundary.',
         signal: 'Telemetry gap between planned baseline and live anomaly exceeds confidence threshold.',
         owner: 'Duty lead',
-        nextAction: 'Pause the change, tag clean metrics, and resume only after 20 minutes of stable health.',
+        nextAction: 'Pause the change, tag clean metrics, and system note only after 20 minutes of stable health.',
         eta: 'active',
       },
       {
@@ -679,7 +679,7 @@ export const scenarios: Scenario[] = [
         impact: 'Supportive telemetry that confirms clean fallback capacity is available.',
         signal: 'Transport ring utilization remains below 70% under the anomaly window.',
         owner: 'Transport NOC',
-        nextAction: 'Keep as supporting evidence for change-resume decision.',
+        nextAction: 'Keep as supporting evidence for change-system note decision.',
         eta: 'monitor',
       },
     ],
@@ -708,7 +708,7 @@ export const scenarios: Scenario[] = [
       {
         time: '22:29',
         title: 'Change window reopened under stable telemetry',
-        detail: 'Attack pressure normalized, rollback avoided, and maintenance resumed with guardrails.',
+        detail: 'Attack pressure normalized, rollback avoided, and maintenance system noted with guardrails.',
         owner: 'Change Manager',
         state: 'queued',
       },
@@ -723,11 +723,11 @@ export const scenarios: Scenario[] = [
       {
         title: 'Protected service lane advisor',
         value: '9 services',
-        summary: 'Tag premium customer paths that must remain stable before any change resume decision.',
+        summary: 'Tag premium customer paths that must remain stable before any change system note decision.',
         outcome: 'Connects IDC incident handling to real customer impact rather than isolated edge graphs.',
       },
       {
-        title: 'Resume gate checklist',
+        title: 'System note gate checklist',
         value: '7 conditions',
         summary: 'Require clean latency, stable attack rate decay, owner confirmation, and rollback readiness before resuming maintenance.',
         outcome: 'Shows disciplined operations and process quality, not just tooling.',
@@ -744,7 +744,7 @@ export const scenarios: Scenario[] = [
         step: '02',
         owner: 'Security Operations',
         action: 'Separate anomaly traffic from planned-change traffic using rate, SYN ratio, and clean-baseline markers.',
-        outcome: 'Creates a trustworthy decision boundary for mitigation and resume timing.',
+        outcome: 'Creates a trustworthy decision boundary for mitigation and system note timing.',
       },
       {
         step: '03',
@@ -755,7 +755,7 @@ export const scenarios: Scenario[] = [
       {
         step: '04',
         owner: 'Change Manager',
-        action: 'Reopen the maintenance lane only after stable latency, attack-rate decay, and rollback readiness all clear the resume gate.',
+        action: 'Reopen the maintenance lane only after stable latency, attack-rate decay, and rollback readiness all clear the system note gate.',
         outcome: 'Shows disciplined process control, not just fast response.',
       },
     ],
@@ -765,11 +765,11 @@ export const scenarios: Scenario[] = [
         text: '이 시나리오는 IDC 엣지 공격 상황과 계획 작업이 겹쳤을 때, 보안 대응과 운영 프로세스를 어떻게 분리해 판단하는지 보여줍니다. 장애 대응뿐 아니라 변경관리와 품질 통제까지 설명할 수 있습니다.',
       },
       {
-        label: 'Resume bullet',
-        text: 'Built an IDC edge operations scenario that separates DDoS indicators from planned-change noise and uses guarded resume gates to protect service quality and premium traffic.',
+        label: 'System note bullet',
+        text: 'Built an IDC edge operations scenario that separates DDoS indicators from planned-change noise and uses guarded system note gates to protect service quality and premium traffic.',
       },
       {
-        label: 'Interview angle',
+        label: 'Technical review angle',
         text: 'I included this to show that operations quality is also process quality: sometimes the key decision is not rollback vs continue, but how to create a clean boundary for that call.',
       },
     ],
@@ -780,17 +780,17 @@ export const scenarios: Scenario[] = [
       },
       {
         keyword: '운영 프로세스 관리',
-        proof: 'Maintenance resume gate and attack/change separation show explicit operational discipline.',
+        proof: 'Maintenance system note gate and attack/change separation show explicit operational discipline.',
       },
       {
         keyword: 'AX 기반 자동화',
         proof: 'Automation is used for classification, prioritization, and change gating rather than vague chat output.',
       },
     ],
-    recruiterNotes: [
+    operatorNotes: [
       'This scenario widens the story beyond outages into controlled maintenance, security posture, and change governance.',
-      'It is useful if the interviewer cares about DDoS, IDC, or disciplined operations process, not only transport incidents.',
-      'The project stays reviewer-safe with deterministic data, but the operational thinking remains concrete and believable.',
+      'It is useful when the inspection path needs DDoS, IDC, or disciplined operations process, not only transport incidents.',
+      'The project stays self-contained with deterministic data, but the operational thinking remains concrete and believable.',
     ],
   },
 ];
