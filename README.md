@@ -122,3 +122,11 @@ Use this repo like this:
 ## Suggested talking point
 
 “이 프로젝트는 통신사 NW 운영 직무에 맞춰 만든 서비스 품질 가시화 워크벤치입니다. Access, transport, core, IDC를 따로 보지 않고 E2E 서비스 영향과 장애 대응, 우선 고객 보호, 유지보수 게이트, 운영 자동화를 한 화면에서 판단하도록 설계했습니다.”
+
+## Cloud + AI Architecture
+
+This repository includes a neutral cloud and AI engineering blueprint that maps the current proof surface to runtime boundaries, data contracts, model-risk controls, deployment posture, and validation hooks.
+
+- [Cloud + AI architecture blueprint](docs/cloud-ai-architecture.md)
+- [Machine-readable architecture manifest](architecture/blueprint.json)
+- Validation command: `python3 scripts/validate_architecture_blueprint.py`
