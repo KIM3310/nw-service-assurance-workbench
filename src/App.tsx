@@ -40,7 +40,7 @@ const sectionIcon = {
   alarms: <Activity className="section-icon" aria-hidden="true" />,
   timeline: <Clock3 className="section-icon" aria-hidden="true" />,
   automation: <Sparkles className="section-icon" aria-hidden="true" />,
-  roleFit: <Workflow className="section-icon" aria-hidden="true" />,
+  capabilityFit: <Workflow className="section-icon" aria-hidden="true" />,
   runbook: <BadgeCheck className="section-icon" aria-hidden="true" />,
   application: <FileText className="section-icon" aria-hidden="true" />,
 } as const;
@@ -82,7 +82,7 @@ function App() {
                 Review the active incident lane
                 <ArrowRight aria-hidden="true" />
               </a>
-              <a className="secondary-action" href="#role-fit">
+              <a className="secondary-action" href="#capability-fit">
                 Open operating map
               </a>
             </div>
@@ -305,15 +305,15 @@ function App() {
           </CardSection>
 
           <CardSection
-            icon={sectionIcon.roleFit}
+            icon={sectionIcon.capabilityFit}
             kicker="Capability fit"
             title="Capabilities this surface demonstrates"
             copy="This section keeps the system from drifting into generic DevOps or generic AI territory. It stays anchored to the network operations lane."
-            id="role-fit"
+            id="capability-fit"
           >
-            <div className="role-fit-list">
+            <div className="capability-fit-list">
               {activeScenario.roleMappings.map((mapping) => (
-                <RoleFitCard key={mapping.keyword} mapping={mapping} />
+                <CapabilityFitCard key={mapping.keyword} mapping={mapping} />
               ))}
             </div>
           </CardSection>
@@ -497,10 +497,10 @@ function AutomationCardView({ card }: { card: AutomationCard }) {
   );
 }
 
-function RoleFitCard({ mapping }: { mapping: RoleMapping }) {
+function CapabilityFitCard({ mapping }: { mapping: RoleMapping }) {
   return (
-    <article className="role-fit-card">
-      <div className="role-fit-header">
+    <article className="capability-fit-card">
+      <div className="capability-fit-header">
         <BadgeCheck className="section-icon" aria-hidden="true" />
         <h3>{mapping.keyword}</h3>
       </div>
