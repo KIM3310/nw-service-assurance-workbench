@@ -21,6 +21,10 @@ A telecom/service-assurance board that converts network noise into SLA, outage, 
 - **Verification:** Run `npm run verify`; it covers typecheck, tests, and build.
 - **Commercial read:** Sell it as a network/service assurance workbench for operator handoff and incident posture.
 
+## Commercialization Playbook
+
+- [Monetization and GTM playbook](docs/monetization-playbook.md) maps the repository to buyer segments, offer ladder, pricing hypotheses, proof gates, and risk boundaries.
+
 ## Resource posture
 
 No other resources are required to ship or demo this project well.
