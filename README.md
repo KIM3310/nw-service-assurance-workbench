@@ -14,6 +14,13 @@ A telecom/service-assurance board that converts network noise into SLA, outage, 
 | Safety boundary | The workbench uses staged scenarios and synthetic service data; production use needs real monitoring adapters and access control. |
 | Fast proof | Run the local verification commands and inspect the UI surfaces for service-impact and handoff clarity. |
 
+## Reviewer Fast Path
+
+- **First minute:** Open the service-impact view, then inspect handoff and recovery ownership.
+- **Local demo:** Run `npm install && npm run dev`, then open `http://127.0.0.1:5173`.
+- **Verification:** Run `npm run verify`; it covers typecheck, tests, and build.
+- **Commercial read:** Sell it as a network/service assurance workbench for operator handoff and incident posture.
+
 ## Resource posture
 
 No other resources are required to ship or demo this project well.
