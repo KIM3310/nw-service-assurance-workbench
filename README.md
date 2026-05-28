@@ -2,6 +2,18 @@
 
 Scenario-driven carrier network operations system project focused on 5G/LTE access-core visibility, transport and IDC incident handling, service-quality review, and AX-assisted NOC playbooks.
 
+## Product and Review Surface
+
+A telecom/service-assurance board that converts network noise into SLA, outage, and handoff decisions.
+
+| Lens | Definition |
+|---|---|
+| Buyer or user | Telecom operations, IDC/network operations, managed service teams, and enterprise network owners. |
+| Commercial route | Sell as a service-visibility starter kit, outage-review board, or SLA reporting prototype for operations teams. |
+| Review signal | Outage triage, service path visibility, network posture, operator notes, and workflow automation patterns. |
+| Safety boundary | The workbench uses staged scenarios and synthetic service data; production use needs real monitoring adapters and access control. |
+| Fast proof | Run the local verification commands and inspect the UI surfaces for service-impact and handoff clarity. |
+
 ## Resource posture
 
 No other resources are required to ship or demo this project well.
