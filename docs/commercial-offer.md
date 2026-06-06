@@ -12,7 +12,7 @@ This is the buyer-ready version of the repository. It turns the technical proof 
 | Buyer | Telecom operations, IDC/network teams, MSPs, and enterprise network owners. |
 | Pain wedge | Service assurance board for access/core/transport incidents, SLA posture, and operator handoff. |
 | Front-door offer | NOC workbench pilot |
-| Entry scope | $5k-$15k workshop |
+| Entry scope | Scope after buyer intake |
 | Proof before pitch | npm run verify passes |
 | Next buyer action | Review one proof artifact, then choose diagnostic, workshop, pilot, support, or revival path. |
 
@@ -20,9 +20,9 @@ This is the buyer-ready version of the repository. It turns the technical proof 
 
 | Offer | Scope assumption | Buyer-facing scope |
 |---|---|---|
-| NOC workbench pilot | $5k-$15k workshop | Record one outage walkthrough |
+| NOC workbench pilot | Scope after buyer intake | Record one outage walkthrough |
 | Outage review board | buyer-approved implementation diagnostic | Build MSP one-pager |
-| SLA reporting prototype | $3k-$12k/month assurance reporting | Offer assurance review |
+| SLA reporting prototype | Scope after buyer intake | Offer assurance review |
 
 ## Close Path
 

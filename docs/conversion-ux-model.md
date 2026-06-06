@@ -49,9 +49,9 @@ This note specializes the repository for service launch. It combines product str
 
 ## Conversion Path
 
-- Risk-reversing entry: NOC workbench pilot ($5k-$15k workshop) with one acceptance metric.
+- Risk-reversing entry: NOC workbench pilot (scope after buyer intake) with one acceptance metric.
 - Pilot: Outage review board (buyer-approved implementation diagnostic) using buyer-approved data and named operators.
-- Recurring layer: SLA reporting prototype ($3k-$12k/month assurance reporting) for monitoring, governance, support, or managed review.
+- Recurring layer: SLA reporting prototype (scope after buyer intake) for monitoring, governance, support, or managed review.
 
 ## Scope Frame
 

@@ -50,9 +50,9 @@ Use this page as the short path through the repository. It keeps the review grou
 
 | Possible offer | Working scope assumption |
 |---|---|
-| NOC workbench pilot | $5k-$15k workshop |
+| NOC workbench pilot | Scope after buyer intake |
 | Outage review board | buyer-approved implementation diagnostic |
-| SLA reporting prototype | $3k-$12k/month assurance reporting |
+| SLA reporting prototype | Scope after buyer intake |
 
 ## Boundaries
 
