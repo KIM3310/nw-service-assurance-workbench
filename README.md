@@ -8,8 +8,8 @@ A telecom/service-assurance board that converts network noise into SLA, outage, 
 
 | Lens | Definition |
 |---|---|
-| Buyer or user | Telecom operations, IDC/network operations, managed service teams, and enterprise network owners. |
-| Commercial route | Sell as a service-visibility starter kit, outage-review board, or SLA reporting prototype for operations teams. |
+| Audience | Telecom operations, IDC/network operations, managed service teams, and enterprise network owners. |
+| Review path | Validate the demo, README, architecture notes, and quality gate before deeper workflow review. |
 | Review signal | Outage triage, service path visibility, network posture, operator notes, and workflow automation patterns. |
 | Safety boundary | The workbench uses staged scenarios and synthetic service data; production use needs real monitoring adapters and access control. |
 | Fast proof | Run the local verification commands and inspect the UI surfaces for service-impact and handoff clarity. |
@@ -19,20 +19,16 @@ A telecom/service-assurance board that converts network noise into SLA, outage, 
 - **First minute:** Open the service-impact view, then inspect handoff and recovery ownership.
 - **Local demo:** Run `npm install && npm run dev`, then open `http://127.0.0.1:5173`.
 - **Verification:** Run `npm run verify`; it covers typecheck, tests, and build.
-- **Commercial read:** Sell it as a network/service assurance workbench for operator handoff and incident posture.
 
 ## Service Launch Playbook
 
-- [Service launch playbook](docs/service-launch-playbook.md) maps the repository to buyer segments, offer ladder, proof gates, proof gates, and risk boundaries.
+- [Service launch playbook](docs/service-launch-playbook.md) maps the repository to review audiences, offer ladder, proof gates, proof gates, and risk boundaries.
 
 ## Review Notes
 
 - [Review guide](docs/reviewer-evidence-map.md) summarizes the project angle, first files to inspect, verification commands, and known boundaries.
 - [Quality notes](docs/quality-gate.md) lists the local checks, CI surface, and release expectations for this repository.
-- [Service growth model](docs/service-growth-model.md) maps the project to an ethical service path, activation loop, scope logic, and growth experiments.
 - [Enterprise readiness notes](docs/enterprise-readiness.md) outlines security, data, operations, integration, and handoff expectations.
-- [Conversion UX model](docs/conversion-ux-model.md) maps the buyer path, behavioral design, UI/UX direction, scope frame, and ethical conversion guardrails.
-- [Commercial offer](docs/commercial-offer.md) packages the repository into a buyer-ready offer ladder, proof gate, outreach angle, and close path.
 
 ## Resource posture
 
@@ -60,7 +56,7 @@ This repo is designed to make one operational story explicit:
 1. Network operations language should stay visible, not collapse into generic cloud dashboard copy.
 2. Incident handling and service-quality thinking should become an inspectable product surface.
 3. AX/automation should reduce operational noise without hiding the operator decision boundary.
-4. Operational discipline should connect to a commercial carrier NOC context through concrete workflows.
+4. Operational discipline should connect to a carrier NOC context through concrete workflows.
 
 ## What the operator sees
 
@@ -165,7 +161,7 @@ This repository includes a neutral cloud and AI engineering blueprint that maps 
 
 ## Enterprise Productization
 
-- [Product operating model](docs/product-operating-model.md) defines the buyer, paid wedge, trust boundary, operating checks, and service path for this repository.
+- [Product operating model](docs/product-operating-model.md) defines the reviewer, trust boundary, trust boundary, operating checks, and service path for this repository.
 
 ## Service Architecture
 

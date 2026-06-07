@@ -46,13 +46,13 @@ Use this page as the short path through the repository. It keeps the review grou
 - No-key local demo works
 - Service-impact narrative is visible
 
-## Commercial Notes
+## Review Notes
 
 | Possible offer | Working scope assumption |
 |---|---|
-| NOC workbench pilot | Scope after buyer intake |
-| Outage review board | buyer-approved implementation diagnostic |
-| SLA reporting prototype | Scope after buyer intake |
+| NOC workbench pilot | Scope after reviewer intake |
+| Outage review board | reviewer-approved implementation diagnostic |
+| SLA reporting prototype | Scope after reviewer intake |
 
 ## Boundaries
 

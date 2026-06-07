@@ -520,7 +520,7 @@ export const scenarios: Scenario[] = [
     operatorNotes: [
       'This is the strongest scenario for a carrier operations system walkthrough because the service blast radius is obvious.',
       'The app intentionally talks in carrier operations language: reroute, hold-down, VIP circuits, field dispatch, ingress diversity.',
-      'It also translates military-style incident discipline into a commercial NOC surface without sounding generic.',
+      'It also translates military-style incident discipline into a carrier NOC surface without sounding generic.',
     ],
   },
   {
