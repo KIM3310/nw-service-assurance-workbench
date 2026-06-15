@@ -1,20 +1,20 @@
 # NW Service Assurance Workbench
 
-Scenario-driven carrier network operations system project focused on 5G/LTE access-core visibility, transport and IDC incident handling, service-quality review, and AX-assisted NOC playbooks.
+Scenario-driven carrier network operations system project focused on 5G/LTE access-core visibility, transport and IDC incident handling, service-quality architecture, and AX-assisted NOC playbooks.
 
-## Product and Review Surface
+## Product and System Surface
 
 A telecom/service-assurance board that converts network noise into SLA, outage, and handoff decisions.
 
 | Lens | Definition |
 |---|---|
 | Audience | Telecom operations, IDC/network operations, managed service teams, and enterprise network owners. |
-| Review path | Validate the demo, README, architecture notes, and quality gate before deeper workflow review. |
-| Architecture signal | Outage triage, service path visibility, network posture, operator notes, and workflow automation patterns. |
+| Architecture path | Validate the demo, README, architecture notes, and quality gate before deeper workflow architecture. |
+| System signal | Outage triage, service path visibility, network posture, operator notes, and workflow automation patterns. |
 | Safety boundary | The workbench uses staged scenarios and synthetic service data; production use needs real monitoring adapters and access control. |
-| Fast proof | Run the local verification commands and inspect the UI surfaces for service-impact and handoff clarity. |
+| Fast path | Run the local runtime commands and inspect the UI surfaces for service-impact and handoff clarity. |
 
-## Reviewer Fast Path
+## System Fast Path
 
 - **First minute:** Open the service-impact view, then inspect handoff and recovery ownership.
 - **Local demo:** Run `npm install && npm run dev`, then open `http://127.0.0.1:5173`.
@@ -22,11 +22,11 @@ A telecom/service-assurance board that converts network noise into SLA, outage, 
 
 ## Service Launch Playbook
 
-- [Service launch playbook](docs/service-launch-playbook.md) maps the repository to review audiences, proof gates, operating boundaries, and risk controls.
+- [Service launch playbook](docs/service-launch-playbook.md) maps the repository to architecture audiences, operating gates, operating boundaries, and risk controls.
 
-## Review Notes
+## Architecture Notes
 
-- [Review guide](docs/reviewer-evidence-map.md) summarizes the project angle, first files to inspect, verification commands, and known boundaries.
+- [Architecture guide](docs/architecture-evidence-map.md) summarizes the project angle, first files to inspect, runtime commands, and known boundaries.
 - [Quality notes](docs/quality-gate.md) lists the local checks, CI surface, and release expectations for this repository.
 - [Enterprise readiness notes](docs/enterprise-readiness.md) outlines security, data, operations, integration, and handoff expectations.
 
@@ -40,7 +40,7 @@ No other resources are required to ship or demo this project well.
 - no external dataset
 - no model provider dependency
 
-That is intentional. The project is designed to be a fast, self-contained local proof for a carrier NW application, not a setup-heavy demo that breaks in review.
+That is intentional. The project is designed to be a fast, self-contained local proof for a carrier NW application, not a setup-heavy demo that breaks in architecture.
 
 ## Operational Proof Boundary
 
@@ -139,13 +139,13 @@ src/
   test/                UI and utility tests
 ```
 
-## Technical review Positioning
+## Architecture walkthrough Positioning
 
 Use this repo like this:
 
 - **Lead with military network operations experience** for 24/7 discipline, 장애 대응, and 보안/권한 통제
 - **Then use this project** to show how that experience translates into a modern service-assurance and quality-operations surface
-- **Only after that**, mention broader projects like `AegisOps` or `ops-reliability-workbench` as supporting evidence for incident review, observability, and operator tooling
+- **Only after that**, mention broader projects like `AegisOps` or `ops-reliability-workbench` as supporting evidence for incident architecture, observability, and operator tooling
 
 ## Suggested talking point
 
@@ -161,7 +161,7 @@ This repository includes a neutral cloud and AI engineering blueprint that maps 
 
 ## Enterprise Productization
 
-- [Product operating model](docs/product-operating-model.md) defines the reviewer, trust boundary, trust boundary, operating checks, and service path for this repository.
+- [Product operating model](docs/product-operating-model.md) defines the technical reader, trust boundary, trust boundary, operating checks, and service path for this repository.
 
 ## System Architecture
 

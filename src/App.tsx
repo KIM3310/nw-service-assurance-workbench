@@ -280,7 +280,7 @@ function App() {
             icon={sectionIcon.application}
             kicker="Operations pack"
             title="Exportable operations notes"
-            copy="Reusable notes for handoff summaries, architecture reviews, and system walkthroughs."
+            copy="Reusable notes for handoff summaries, assessments, and system walkthroughs."
           >
             <div className="application-list">
               {activeScenario.applicationAssets.map((asset) => (
