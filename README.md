@@ -10,7 +10,7 @@ A telecom/service-assurance board that converts network noise into SLA, outage, 
 |---|---|
 | Audience | Telecom operations, IDC/network operations, managed service teams, and enterprise network owners. |
 | Review path | Validate the demo, README, architecture notes, and quality gate before deeper workflow review. |
-| Review signal | Outage triage, service path visibility, network posture, operator notes, and workflow automation patterns. |
+| Architecture signal | Outage triage, service path visibility, network posture, operator notes, and workflow automation patterns. |
 | Safety boundary | The workbench uses staged scenarios and synthetic service data; production use needs real monitoring adapters and access control. |
 | Fast proof | Run the local verification commands and inspect the UI surfaces for service-impact and handoff clarity. |
 
@@ -162,6 +162,10 @@ This repository includes a neutral cloud and AI engineering blueprint that maps 
 ## Enterprise Productization
 
 - [Product operating model](docs/product-operating-model.md) defines the reviewer, trust boundary, trust boundary, operating checks, and service path for this repository.
+
+## System Architecture
+
+- [System architecture](docs/system-architecture.md) maps the runtime boundary, data/control flow, cloud or local deployment surface, and operating assumptions for this repository.
 
 ## Service Architecture
 
