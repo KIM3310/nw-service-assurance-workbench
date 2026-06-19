@@ -170,3 +170,17 @@ This repository includes a neutral cloud and AI engineering blueprint that maps 
 ## Service Architecture
 
 - [Service architecture](docs/service-architecture.md) defines the cloud resources, account information, cost controls, and production guardrails needed to turn this repo into a scoped service without publishing public financial assumptions.
+
+<!-- search-growth-readme:start -->
+
+## Search And Service Surface
+
+- Public entry: public synthetic network operations demo
+- Paid boundary: paid workspace for service maps, private incident history, and recurring SLA reports
+- Canonical URL: https://nw-service-assurance-workbench.ehdjs1351.workers.dev/
+- Lead capture: mailto:ehdjs1351@gmail.com?subject=NW%20Service%20Assurance%20Workbench%20private%20workspace&body=I%20am%20interested%20in%20paid%20workspace%20for%20service%20maps%2C%20private%20incident%20history%2C%20and%20recurring%20SLA%20reports%20for%20NW%20Service%20Assurance%20Workbench.
+- Machine-readable offer: [docs/service-offer.json](docs/service-offer.json)
+- Search growth implementation: [docs/search-growth-implementation.md](docs/search-growth-implementation.md)
+- Revenue architecture: [docs/revenue-architecture.md](docs/revenue-architecture.md)
+
+<!-- search-growth-readme:end -->

@@ -1,0 +1,12 @@
+# NW Service Assurance Workbench
+
+Purpose: network service assurance workbench with SLA signals, service paths, and incident handoff
+Free entry point: public synthetic network operations demo
+Paid boundary: paid workspace for service maps, private incident history, and recurring SLA reports
+Canonical URL: https://nw-service-assurance-workbench.ehdjs1351.workers.dev/
+Repository: https://github.com/KIM3310/nw-service-assurance-workbench
+System architecture: https://github.com/KIM3310/nw-service-assurance-workbench/blob/main/docs/system-architecture.md
+Revenue architecture: https://github.com/KIM3310/nw-service-assurance-workbench/blob/main/docs/revenue-architecture.md
+Lead capture: mailto:ehdjs1351@gmail.com?subject=NW%20Service%20Assurance%20Workbench%20private%20workspace&body=I%20am%20interested%20in%20paid%20workspace%20for%20service%20maps%2C%20private%20incident%20history%2C%20and%20recurring%20SLA%20reports%20for%20NW%20Service%20Assurance%20Workbench.
+
+Use this project as a runnable or inspectable reference for NW Service Assurance Workbench demo, NW Service Assurance Workbench system architecture, NW Service Assurance Workbench business tool, network service assurance workbench with SLA signals, service paths, and incident handoff service.

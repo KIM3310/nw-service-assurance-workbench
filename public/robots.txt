@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nw-service-assurance-workbench.ehdjs1351.workers.dev/sitemap.xml
