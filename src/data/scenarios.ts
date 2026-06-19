@@ -776,7 +776,7 @@ export const scenarios: Scenario[] = [
     roleMappings: [
       {
         keyword: '서버/보안/네트워크 운영 품질 확보',
-        proof: 'IDC edge, DNS, traffic anomaly, and clean rollback boundaries are managed in one review loop.',
+        proof: 'IDC edge, DNS, traffic anomaly, and clean rollback boundaries are managed in one inspection loop.',
       },
       {
         keyword: '운영 프로세스 관리',

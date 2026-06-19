@@ -48,7 +48,7 @@ const sectionIcon = {
 const deliveryPosture = [
   {
     title: 'No API keys required',
-    detail: 'The entire review flow is deterministic. No hosted model, cloud LLM, or private inference endpoint is needed to demo the service.',
+    detail: 'The entire architecture flow is deterministic. No hosted model, cloud LLM, or private inference endpoint is needed to demo the service.',
   },
   {
     title: 'No backend dependency',
