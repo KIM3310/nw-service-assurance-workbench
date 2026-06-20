@@ -260,7 +260,7 @@ export const scenarios: Scenario[] = [
       'A construction-related fiber cut degrades 5G backhaul and enterprise leased-line diversity, forcing rapid reroute, field dispatch, and customer-priority handling.',
     strongestFor: '장애 대응, E2E 영향도, VIP 회선 보호를 가장 강하게 보여주는 대표 시나리오',
     commandFocus:
-      'Contain the blast radius, stabilize transport and core posture, preserve premium B2B circuits, and issue a operator-readable recovery narrative.',
+      'Contain the blast radius, stabilize transport and core posture, preserve premium B2B circuits, and issue an operator-readable recovery narrative.',
     operatorDecision:
       'Shift impacted traffic to the alternate ring, reserve clean capacity for VIP circuits, dispatch field support, and freeze non-essential changes until packet loss normalizes.',
     availability: '99.217%',
