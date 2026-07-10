@@ -1,11 +1,11 @@
 # Product Operating Model
 
 Repository: `nw-service-assurance-workbench`
-Last updated: 2026-06-03 KST
+Last reviewed: 2026-06-03 KST
 
 ## Enterprise Product Position
 
-Scenario-driven carrier network operations system project focused on 5G/LTE access-core visibility, transport and IDC incident handling, service-quality architecture, and AX-assisted NOC playbooks.
+Scenario-driven carrier network operations system project focused on 5G/LTE access-core visibility, transport and IDC incident handling, service-quality review, and AX-assisted NOC playbooks.
 
 This repository is packaged as a concrete system surface, not a loose code sample. The enterprise value is a narrow proof that can be inspected, run, tested, and converted into a scoped implementation motion.
 

@@ -161,7 +161,7 @@ export const scenarios: Scenario[] = [
       {
         time: '18:18',
         title: 'Metro watch alarm acknowledged',
-        detail: 'Protected pair drift tagged as watch-only and tied to tonight’s change architecture package.',
+        detail: 'Protected pair drift tagged as watch-only and tied to tonight’s change review package.',
         owner: 'Transport NOC',
         state: 'active',
       },
@@ -189,7 +189,7 @@ export const scenarios: Scenario[] = [
       {
         title: 'Trend-first alarm clustering',
         value: '3 watch groups',
-        summary: 'Cluster low-severity alarms into one architecture surface instead of treating each device signal independently.',
+        summary: 'Cluster low-severity alarms into one review surface instead of treating each device signal independently.',
         outcome: 'Improves E2E visibility and reduces false escalations.',
       },
     ],
@@ -229,7 +229,7 @@ export const scenarios: Scenario[] = [
         text: 'Built a self-contained service assurance board that links access, transport, core, IDC, maintenance gates, and premium customer path protection in one network-operations surface.',
       },
       {
-        label: 'Architecture walkthrough angle',
+        label: 'Operational takeaway',
         text: 'I wanted to show that stable operations are not passive monitoring; they require clean baselines, disciplined maintenance gates, and customer-priority path awareness.',
       },
     ],
@@ -499,7 +499,7 @@ export const scenarios: Scenario[] = [
         text: 'Designed a fiber-cut recovery control surface that turns transport faults into reroute actions, field dispatch, VIP circuit protection, and customer-impact review across access, core, and IDC domains.',
       },
       {
-        label: 'Architecture walkthrough angle',
+        label: 'Operational takeaway',
         text: 'This is the strongest proof that I think in service-assurance terms: not just where the fault happened, but which customers are exposed, what path stays clean, and when change freeze should hold.',
       },
     ],
@@ -769,7 +769,7 @@ export const scenarios: Scenario[] = [
         text: 'Built an IDC edge operations scenario that separates DDoS indicators from planned-change noise and uses guarded system note gates to protect service quality and premium traffic.',
       },
       {
-        label: 'Architecture walkthrough angle',
+        label: 'Operational takeaway',
         text: 'I included this to show that operations quality is also process quality: sometimes the key decision is not rollback vs continue, but how to create a clean boundary for that call.',
       },
     ],

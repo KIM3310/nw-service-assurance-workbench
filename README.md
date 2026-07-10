@@ -1,32 +1,32 @@
 # NW Service Assurance Workbench
 
-Scenario-driven carrier network operations system project focused on 5G/LTE access-core visibility, transport and IDC incident handling, service-quality architecture, and AX-assisted NOC playbooks.
+Scenario-driven carrier network operations system project focused on 5G/LTE access-core visibility, transport and IDC incident handling, service-quality review, and AX-assisted NOC playbooks.
 
-## Product and System Surface
+## System Overview
 
 A telecom/service-assurance board that converts network noise into SLA, outage, and handoff decisions.
 
-| Lens | Definition |
+| Area | Details |
 |---|---|
-| Audience | Telecom operations, IDC/network operations, managed service teams, and enterprise network owners. |
-| Architecture path | Validate the demo, README, architecture notes, and quality gate before deeper workflow architecture. |
-| System signal | Outage triage, service path visibility, network posture, operator notes, and workflow automation patterns. |
-| Safety boundary | The workbench uses staged scenarios and synthetic service data; production use needs real monitoring adapters and access control. |
-| Fast path | Run the local runtime commands and inspect the UI surfaces for service-impact and handoff clarity. |
+| Users | Telecom operations, IDC/network operations, managed service teams, and enterprise network owners. |
+| Technical path | Validate the demo, README, architecture notes, and quality gate before deeper workflow review. |
+| System scope | Outage triage, service path visibility, network posture, operator notes, and workflow automation patterns. |
+| Operating boundary | The workbench uses staged scenarios and synthetic service data; production use needs real monitoring adapters and access control. |
+| Evaluation path | Run the local runtime commands and inspect the UI surfaces for service-impact and handoff clarity. |
 
-## System Fast Path
+## Evaluation Path
 
-- **First minute:** Open the service-impact view, then inspect handoff and recovery ownership.
+- **Start here:** Open the service-impact view, then inspect handoff and recovery ownership.
 - **Local demo:** Run `npm install && npm run dev`, then open `http://127.0.0.1:5173`.
-- **Verification:** Run `npm run verify`; it covers typecheck, tests, and build.
+- **Checks:** Run `npm run verify`; it covers typecheck, tests, and build.
 
 ## Service Launch Playbook
 
-- [Service launch playbook](docs/service-launch-playbook.md) maps the repository to architecture audiences, operating gates, operating boundaries, and risk controls.
+- [Service launch playbook](docs/service-launch-playbook.md) maps the repository to its product scope, operating gates, operating boundaries, and risk controls.
 
 ## Architecture Notes
 
-- [Architecture guide](docs/architecture-evidence-map.md) summarizes the project angle, first files to inspect, runtime commands, and known boundaries.
+- [Architecture guide](docs/architecture-evidence-map.md) summarizes the system scope, first files to inspect, runtime commands, and known boundaries.
 - [Quality notes](docs/quality-gate.md) lists the local checks, CI surface, and release expectations for this repository.
 - [Enterprise readiness notes](docs/enterprise-readiness.md) outlines security, data, operations, integration, and handoff expectations.
 
@@ -40,7 +40,7 @@ No other resources are required to ship or demo this project well.
 - no external dataset
 - no model provider dependency
 
-That is intentional. The project is designed to be a fast, self-contained local proof for a carrier NW application, not a setup-heavy demo that breaks in architecture.
+That is intentional. The project is designed to be a fast, self-contained local proof for a carrier NW application, not a setup-heavy demo that breaks during review.
 
 ## Operational Proof Boundary
 
@@ -139,7 +139,7 @@ src/
   test/                UI and utility tests
 ```
 
-## Architecture walkthrough Positioning
+## Operational Review Context
 
 Use this repo like this:
 
@@ -153,15 +153,13 @@ Use this repo like this:
 
 ## Cloud + AI Architecture
 
-This repository includes a neutral cloud and AI engineering blueprint that maps the current proof surface to runtime boundaries, data contracts, model-risk controls, deployment posture, and validation hooks.
-
 - [Cloud + AI architecture blueprint](docs/cloud-ai-architecture.md)
 - [Machine-readable architecture manifest](docs/architecture/blueprint.json)
 - Validation command: `python3 scripts/validate_architecture_blueprint.py`
 
 ## Enterprise Productization
 
-- [Product operating model](docs/product-operating-model.md) defines the architecture inspection, trust boundary, trust boundary, operating checks, and service path for this repository.
+- [Product operating model](docs/product-operating-model.md) defines the product scope, trust boundary, operating checks, and service path for this repository.
 
 ## System Architecture
 

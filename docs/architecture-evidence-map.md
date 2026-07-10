@@ -2,7 +2,7 @@
 
 Updated: 2026-05-30
 
-Use this page as the short path through the repository. It keeps the architecture grounded in the code, docs, commands, and boundaries that are already present.
+Use this page as the short path through the repository. It keeps the review grounded in the code, docs, commands, and boundaries that are already present.
 
 ## Summary
 
@@ -16,9 +16,9 @@ Use this page as the short path through the repository. It keeps the architectur
 ## Open First
 
 1. Start with the README fast path and architecture section.
-2. Open `docs/service-launch-playbook.md` only when architectureing the product or service angle.
+2. Open `docs/service-launch-playbook.md` only when reviewing the product or service angle.
 3. Check the commands below before making claims about quality.
-4. Skim the CI workflows and fixture data before deeper implementation architecture.
+4. Skim the CI workflows and fixture data before deeper implementation review.
 5. Read the boundaries section before presenting the project externally.
 
 ## Checks
@@ -34,7 +34,7 @@ Use this page as the short path through the repository. It keeps the architectur
 
 - .github/workflows/architecture-blueprint.yml
 - .github/workflows/ci.yml
-- .github/workflows/dependency-architecture.yml
+- .github/workflows/dependency-review.yml
 - .github/workflows/repository-health.yml
 - .github/workflows/repository-surface.yml
 - .github/workflows/secret-scan.yml
@@ -50,9 +50,9 @@ Use this page as the short path through the repository. It keeps the architectur
 
 | Possible offer | Working scope assumption |
 |---|---|
-| NOC workbench pilot | Scope after product intake |
-| Outage architecture board | operator-approved implementation diagnostic |
-| SLA reporting prototype | Scope after product intake |
+| NOC workbench pilot | Scope after stakeholder intake |
+| Outage review board | operator-approved implementation diagnostic |
+| SLA reporting prototype | Scope after stakeholder intake |
 
 ## Boundaries
 
