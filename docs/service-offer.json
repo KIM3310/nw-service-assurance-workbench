@@ -69,5 +69,29 @@
     ],
     "isAccessibleForFree": true,
     "keywords": "nw-service-assurance-workbench, Assurance, Workbench, network, assurance, workbench, SLA, signals, paths, incident, handoff, maps, history, recurring, synthetic, operations, tier, Cloudflare, Pages, serverless, launch"
+  },
+  "commerce": {
+    "gateway_url": "https://kim3310-doeon-kim-portfolio.pages.dev/?offer=nw-service-assurance-workbench#service-offers",
+    "lane_id": "aegisops-response-room",
+    "lane_name": "AegisOps Response Room",
+    "billing_mode": "supporter",
+    "price_unit": "recurring tabletop support from USD 200/month after scope review",
+    "fulfillment_kind": "incident replay board, tabletop pack, handoff template, and recurring assurance readout",
+    "risk_bucket": "security-high-trust",
+    "checkout": {
+      "provider": "lemon-squeezy",
+      "status": "account-onboarding-required",
+      "fallback_url": "https://kim3310-doeon-kim-portfolio.pages.dev/?offer=nw-service-assurance-workbench#service-offers"
+    },
+    "sponsorship": {
+      "provider": "github-sponsors",
+      "eligible": true,
+      "status": "account-onboarding-required"
+    },
+    "advertising": {
+      "provider": null,
+      "eligible": false,
+      "status": "not-applicable"
+    }
   }
 }

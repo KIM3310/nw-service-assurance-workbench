@@ -177,6 +177,7 @@ Use this repo like this:
 - Paid boundary: paid workspace for service maps, private incident history, and recurring SLA reports
 - Canonical URL: https://nw-service-assurance-workbench.ehdjs1351.workers.dev/
 - Lead capture: https://github.com/KIM3310/nw-service-assurance-workbench/issues/new?template=service-inquiry.yml&title=Private+workspace+inquiry%3A+NW+Service+Assurance+Workbench
+- Commercial route: https://kim3310-doeon-kim-portfolio.pages.dev/?offer=nw-service-assurance-workbench#service-offers
 - Machine-readable offer: [docs/service-offer.json](docs/service-offer.json)
 - Search growth implementation: [docs/search-growth-implementation.md](docs/search-growth-implementation.md)
 - Revenue architecture: [docs/revenue-architecture.md](docs/revenue-architecture.md)

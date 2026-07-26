@@ -8,5 +8,6 @@ Repository: https://github.com/KIM3310/nw-service-assurance-workbench
 System architecture: https://github.com/KIM3310/nw-service-assurance-workbench/blob/main/docs/system-architecture.md
 Revenue architecture: https://github.com/KIM3310/nw-service-assurance-workbench/blob/main/docs/revenue-architecture.md
 Lead capture: https://github.com/KIM3310/nw-service-assurance-workbench/issues/new?template=service-inquiry.yml&title=Private+workspace+inquiry%3A+NW+Service+Assurance+Workbench
+Commercial route: https://kim3310-doeon-kim-portfolio.pages.dev/?offer=nw-service-assurance-workbench#service-offers
 
 Use this project as a runnable or inspectable reference for NW Service Assurance Workbench demo, NW Service Assurance Workbench system architecture, NW Service Assurance Workbench business tool, network service assurance workbench with SLA signals, service paths, and incident handoff service.
