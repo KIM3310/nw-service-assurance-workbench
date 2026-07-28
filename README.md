@@ -171,9 +171,20 @@ The public workbench remains synthetic and read-only. A private, fixed-scope exe
 - Paid boundary: fixed-scope Incident Operations Exercise; production integrations require separate approval
 - Canonical URL: https://nw-service-assurance-workbench.ehdjs1351.workers.dev/
 - Lead capture: https://kim3310-doeon-kim-portfolio.pages.dev/?offer=nw-service-assurance-workbench&inquiry=incident-operations-exercise#private-inquiry
+- Resource route: https://kim3310-doeon-kim-portfolio.pages.dev/resources/nw-service-assurance-workbench/
 - Commercial route: https://kim3310-doeon-kim-portfolio.pages.dev/?offer=nw-service-assurance-workbench#service-offers
 - Machine-readable offer: [docs/service-offer.json](docs/service-offer.json)
 - Search growth implementation: [docs/search-growth-implementation.md](docs/search-growth-implementation.md)
 - Revenue architecture: [docs/revenue-architecture.md](docs/revenue-architecture.md)
 
 <!-- search-growth-readme:end -->
+
+<!-- KIM3310:AD-DATA-PIVOT:START -->
+## Free Resource, Advertising, and Aggregate Data
+
+- [Public utility and architecture checklist](https://kim3310-doeon-kim-portfolio.pages.dev/resources/nw-service-assurance-workbench/)
+- Revenue model: contextual advertising on the policy-eligible central resource page.
+- Aggregate value: anonymous aggregate service-assurance topic interest and checklist usage counts
+- Boundary: ads allowed only on public assurance resources; service maps, incident notes, SLA exports, and dashboards are ad-free
+- Consent defaults off, DNT/GPC fail closed, and personal or sensitive data is never sold.
+<!-- KIM3310:AD-DATA-PIVOT:END -->

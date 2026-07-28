@@ -10,6 +10,7 @@ Repository: https://github.com/KIM3310/nw-service-assurance-workbench
 System architecture: https://github.com/KIM3310/nw-service-assurance-workbench/blob/main/docs/system-architecture.md
 Revenue architecture: https://github.com/KIM3310/nw-service-assurance-workbench/blob/main/docs/revenue-architecture.md
 Lead capture: https://kim3310-doeon-kim-portfolio.pages.dev/?offer=nw-service-assurance-workbench&inquiry=incident-operations-exercise#private-inquiry
+Resource route: https://kim3310-doeon-kim-portfolio.pages.dev/resources/nw-service-assurance-workbench/
 Commercial route: https://kim3310-doeon-kim-portfolio.pages.dev/?offer=nw-service-assurance-workbench#service-offers
 
 Use this project to inspect access, transport, core, and IDC service impact; prioritized alarms; recovery ownership; change gates; and concise operator handoff notes.
