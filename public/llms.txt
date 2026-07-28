@@ -14,3 +14,9 @@ Resource route: https://kim3310-doeon-kim-portfolio.pages.dev/resources/nw-servi
 Commercial route: https://kim3310-doeon-kim-portfolio.pages.dev/?offer=nw-service-assurance-workbench#service-offers
 
 Use this project to inspect access, transport, core, and IDC service impact; prioritized alarms; recovery ownership; change gates; and concise operator handoff notes.
+# ADSENSE-PUBLICATION:START
+Editorial guide: https://nw-service-assurance-workbench.pages.dev/guide.html
+Architecture article: https://nw-service-assurance-workbench.pages.dev/architecture.html
+Verification article: https://nw-service-assurance-workbench.pages.dev/verification.html
+Publisher information: https://nw-service-assurance-workbench.pages.dev/publisher.html
+# ADSENSE-PUBLICATION:END

@@ -8,7 +8,7 @@ Free network service-assurance checklist for SLA symptoms, maps, and handoff rep
 
 - Audience: network operations and service assurance teams
 - Central resource: https://kim3310-doeon-kim-portfolio.pages.dev/resources/nw-service-assurance-workbench/
-- Live system: https://nw-service-assurance-workbench.pages.dev
+- Live system: https://nw-service-assurance-workbench.pages.dev/
 - Advertising boundary: ads allowed only on public assurance resources; service maps, incident notes, SLA exports, and dashboards are ad-free
 - Current ad state: code-ready on the central resource; serving depends on Google AdSense site approval and consent policy.
 
