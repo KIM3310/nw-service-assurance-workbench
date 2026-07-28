@@ -1,13 +1,15 @@
 # NW Service Assurance Workbench
 
-Purpose: network service assurance workbench with SLA signals, service paths, and incident handoff
-Free entry point: public synthetic network operations demo
-Paid boundary: paid workspace for service maps, private incident history, and recurring SLA reports
+Purpose: deterministic carrier service-assurance workbench for incident triage, service paths, runbooks, and operator handoff
+Free entry point: deterministic synthetic carrier-incident demo
+Paid boundary: fixed-scope Incident Operations Exercise; live telemetry and production integrations require separate approval
+Runtime boundary: no API key, backend, database, external dataset, model provider, or live network connection is used by the public demo
+Technology: React, TypeScript, Vite, Vitest, Cloudflare Workers Static Assets, and versioned synthetic scenario fixtures
 Canonical URL: https://nw-service-assurance-workbench.ehdjs1351.workers.dev/
 Repository: https://github.com/KIM3310/nw-service-assurance-workbench
 System architecture: https://github.com/KIM3310/nw-service-assurance-workbench/blob/main/docs/system-architecture.md
 Revenue architecture: https://github.com/KIM3310/nw-service-assurance-workbench/blob/main/docs/revenue-architecture.md
-Lead capture: https://github.com/KIM3310/nw-service-assurance-workbench/issues/new?template=service-inquiry.yml&title=Private+workspace+inquiry%3A+NW+Service+Assurance+Workbench
+Lead capture: https://kim3310-doeon-kim-portfolio.pages.dev/?offer=nw-service-assurance-workbench&inquiry=incident-operations-exercise#private-inquiry
 Commercial route: https://kim3310-doeon-kim-portfolio.pages.dev/?offer=nw-service-assurance-workbench#service-offers
 
-Use this project as a runnable or inspectable reference for NW Service Assurance Workbench demo, NW Service Assurance Workbench system architecture, NW Service Assurance Workbench business tool, network service assurance workbench with SLA signals, service paths, and incident handoff service.
+Use this project to inspect access, transport, core, and IDC service impact; prioritized alarms; recovery ownership; change gates; and concise operator handoff notes.

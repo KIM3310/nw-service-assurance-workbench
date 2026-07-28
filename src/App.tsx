@@ -18,11 +18,11 @@ import { defaultScenarioId, scenarios } from './data/scenarios';
 import { orderAlarms, severityLabel, statusLabel } from './lib/format';
 import {
   Alarm,
-  ApplicationAsset,
   AutomationCard,
+  Capability,
   DomainStatus,
+  HandoffAsset,
   Metric,
-  RoleMapping,
   RunbookStep,
   ServiceHop,
   TimelineEntry,
@@ -40,23 +40,26 @@ const sectionIcon = {
   alarms: <Activity className="section-icon" aria-hidden="true" />,
   timeline: <Clock3 className="section-icon" aria-hidden="true" />,
   automation: <Sparkles className="section-icon" aria-hidden="true" />,
-  capabilityFit: <Workflow className="section-icon" aria-hidden="true" />,
+  capabilities: <Workflow className="section-icon" aria-hidden="true" />,
   runbook: <BadgeCheck className="section-icon" aria-hidden="true" />,
-  application: <FileText className="section-icon" aria-hidden="true" />,
+  handoff: <FileText className="section-icon" aria-hidden="true" />,
 } as const;
+
+const incidentExerciseUrl =
+  'https://kim3310-doeon-kim-portfolio.pages.dev/?offer=nw-service-assurance-workbench&inquiry=incident-operations-exercise#private-inquiry';
 
 const deliveryPosture = [
   {
-    title: 'No API keys required',
-    detail: 'The entire architecture flow is deterministic. No hosted model, cloud LLM, or private inference endpoint is needed to demo the service.',
+    title: 'Deterministic scenarios',
+    detail: 'The public demo runs from versioned synthetic incident fixtures, so its decisions can be reviewed without a model key.',
   },
   {
-    title: 'No backend dependency',
-    detail: 'The app is a static React/Vite surface, so it can be deployed quickly without standing up a separate server or database.',
+    title: 'Static React runtime',
+    detail: 'React, TypeScript, and Vite render the workbench without a backend, database, or customer telemetry connection.',
   },
   {
-    title: 'No external datasets',
-    detail: 'Carrier-style scenarios, alarms, and service paths are self-contained, which keeps the project self-contained and easy to ship.',
+    title: 'Explicit production boundary',
+    detail: 'Live use requires approved monitoring adapters, identity and access controls, retained audit history, and operator validation.',
   },
 ] as const;
 
@@ -74,16 +77,21 @@ function App() {
             <p className="eyebrow">Carrier Network Service Assurance</p>
             <h1>NW Service Assurance Workbench</h1>
             <p className="hero-summary">
-              Scenario-driven control tower for 5G access, transport, core, IDC, incident recovery,
-              service-quality visibility, and AX-assisted operations playbooks.
+              Deterministic carrier-operations workbench for 5G access, transport, core, and IDC incident triage,
+              end-to-end service impact, recovery runbooks, and operator handoff.
             </p>
             <div className="hero-actions">
-              <a className="primary-action" href="#scenario-board">
-                Review the active incident lane
+              <a
+                className="primary-action"
+                href={incidentExerciseUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Request a private incident exercise
                 <ArrowRight aria-hidden="true" />
               </a>
-              <a className="secondary-action" href="#capability-fit">
-                Open operating map
+              <a className="secondary-action" href="#scenario-board">
+                Explore synthetic scenarios
               </a>
             </div>
             <div className="hero-chips" aria-label="Surface keywords">
@@ -99,14 +107,14 @@ function App() {
             <div className="proof-header">
               <Shield aria-hidden="true" />
               <div>
-                <p className="proof-label">What this project proves</p>
-                <h2>Operations judgment, not dashboard theater</h2>
+                <p className="proof-label">Operational scope</p>
+                <h2>Incident decisions across the service path</h2>
               </div>
             </div>
             <ul className="proof-points">
-              <li>Turns device alarms into access, transport, core, IDC, and customer-impact decisions.</li>
-              <li>Shows incident handling, VIP path protection, and change gates in one self-contained surface.</li>
-              <li>Uses AX support for classification, prioritization, and quality operations instead of generic chat UX.</li>
+              <li>Connects device alarms to access, transport, core, IDC, and customer-impact decisions.</li>
+              <li>Links incident handling, priority-path protection, change gates, and recovery ownership.</li>
+              <li>Uses deterministic automation cards for classification, prioritization, and maintenance gating.</li>
             </ul>
           </aside>
         </section>
@@ -124,11 +132,11 @@ function App() {
               <Server className="section-icon" aria-hidden="true" />
               <div>
                 <p className="section-kicker">Scenario board</p>
-                <h2>Pick the strongest review lane</h2>
+                <h2>Select an incident scenario</h2>
               </div>
             </div>
             <p className="section-copy">
-              Every scenario is deterministic and self-contained, but the decision language stays close to a carrier NOC:
+              Each scenario uses deterministic synthetic data and carrier operations terminology:
               access, transport, core, IDC, SLA, reroute, maintenance, and premium customer protection.
             </p>
           </div>
@@ -145,7 +153,7 @@ function App() {
               >
                 <span className="scenario-tab-title">{scenario.title}</span>
                 <span className="scenario-tab-summary">{scenario.summary}</span>
-                <span className="scenario-tab-fit">{scenario.strongestFor}</span>
+                <span className="scenario-tab-fit">{scenario.operationalFocus}</span>
               </button>
             ))}
           </div>
@@ -178,13 +186,13 @@ function App() {
             <div className="section-heading-main">
               <Shield className="section-icon" aria-hidden="true" />
               <div>
-                <p className="section-kicker">Delivery posture</p>
-                <h2>No extra resources required</h2>
+                <p className="section-kicker">Demo boundary</p>
+                <h2>Self-contained synthetic operations demo</h2>
               </div>
             </div>
             <p className="section-copy">
-              This project is intentionally self-contained so you can ship it fast for the application. It does not need
-              another backend, model key, or external data source to work as a credible local proof.
+              The public runtime is inspectable without credentials or customer data. It models incident decisions and
+              handoff contracts; it does not connect to a live carrier network.
             </p>
           </div>
           <div className="delivery-grid">
@@ -205,7 +213,7 @@ function App() {
             icon={sectionIcon.domains}
             kicker="Health board"
             title="Domain-by-domain network posture"
-            copy="Use this when you want to show operations understanding across access, transport, core, and IDC rather than isolated service charts."
+            copy="Access, transport, core, and IDC health are grouped by service impact rather than shown as isolated device charts."
           >
             <div className="domain-grid">
               {activeScenario.domains.map((domain) => (
@@ -218,7 +226,7 @@ function App() {
             icon={sectionIcon.servicePath}
             kicker="E2E path"
             title="Service path and customer outcome"
-            copy="This is the shortest way to show E2E visibility: network segments are meaningful only when the customer-facing outcome remains visible."
+            copy="The path view keeps the customer-facing outcome visible while operators inspect each network segment."
           >
             <div className="path-list">
               {activeScenario.servicePath.map((hop, index) => (
@@ -233,7 +241,7 @@ function App() {
             icon={sectionIcon.alarms}
             kicker="Alarm queue"
             title="Prioritized incident triage"
-            copy="The table is intentionally action-first: severity, impact, owner, and next move. That makes it easier to discuss operational judgment in system walkthroughs."
+            copy="Severity, service impact, owner, and next action keep the queue aligned with incident response decisions."
           >
             <div className="alarm-table" role="table" aria-label="Prioritized alarm queue">
               <div className="alarm-table-header" role="row">
@@ -267,7 +275,7 @@ function App() {
             icon={sectionIcon.runbook}
             kicker="Operator runbook"
             title="Recovery steps with clear ownership"
-            copy="This makes the service feel less like a static dashboard and more like an operational product. Each step ties technical judgment to owner responsibility and expected outcome."
+            copy="Each recovery step binds a technical action to an accountable owner and an expected service outcome."
           >
             <div className="runbook-list">
               {activeScenario.runbook.map((entry) => (
@@ -277,14 +285,14 @@ function App() {
           </CardSection>
 
           <CardSection
-            icon={sectionIcon.application}
+            icon={sectionIcon.handoff}
             kicker="Operations pack"
-            title="Exportable operations notes"
-            copy="Reusable notes for handoff summaries, assessments, and system walkthroughs."
+            title="Operator handoff notes"
+            copy="Concise incident context, shift handoff language, and decision principles derived from the selected scenario."
           >
             <div className="application-list">
-              {activeScenario.applicationAssets.map((asset) => (
-                <ApplicationAssetCard key={asset.label} asset={asset} />
+              {activeScenario.handoffAssets.map((asset) => (
+                <HandoffAssetCard key={asset.label} asset={asset} />
               ))}
             </div>
           </CardSection>
@@ -305,14 +313,14 @@ function App() {
           </CardSection>
 
           <CardSection
-            icon={sectionIcon.capabilityFit}
-            kicker="Capability fit"
-            title="Capabilities this surface demonstrates"
-            copy="This section keeps the system from drifting into generic DevOps or generic AI territory. It stays anchored to the network operations lane."
+            icon={sectionIcon.capabilities}
+            kicker="Operational capabilities"
+            title="Capabilities represented in the scenario"
+            copy="The capability map ties each synthetic workflow to a concrete network-operations responsibility."
             id="capability-fit"
           >
             <div className="capability-fit-list">
-              {activeScenario.roleMappings.map((mapping) => (
+              {activeScenario.capabilities.map((mapping) => (
                 <CapabilityFitCard key={mapping.keyword} mapping={mapping} />
               ))}
             </div>
@@ -497,7 +505,7 @@ function AutomationCardView({ card }: { card: AutomationCard }) {
   );
 }
 
-function CapabilityFitCard({ mapping }: { mapping: RoleMapping }) {
+function CapabilityFitCard({ mapping }: { mapping: Capability }) {
   return (
     <article className="capability-fit-card">
       <div className="capability-fit-header">
@@ -536,7 +544,7 @@ function RunbookCard({ entry }: { entry: RunbookStep }) {
   );
 }
 
-function ApplicationAssetCard({ asset }: { asset: ApplicationAsset }) {
+function HandoffAssetCard({ asset }: { asset: HandoffAsset }) {
   return (
     <article className="application-card">
       <p className="section-kicker">{asset.label}</p>

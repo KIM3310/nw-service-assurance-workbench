@@ -52,7 +52,7 @@ export interface AutomationCard {
   outcome: string;
 }
 
-export interface RoleMapping {
+export interface Capability {
   keyword: string;
   proof: string;
 }
@@ -64,7 +64,7 @@ export interface RunbookStep {
   outcome: string;
 }
 
-export interface ApplicationAsset {
+export interface HandoffAsset {
   label: string;
   text: string;
 }
@@ -73,7 +73,7 @@ export interface Scenario {
   id: string;
   title: string;
   summary: string;
-  strongestFor: string;
+  operationalFocus: string;
   commandFocus: string;
   operatorDecision: string;
   availability: string;
@@ -87,7 +87,7 @@ export interface Scenario {
   timeline: TimelineEntry[];
   automations: AutomationCard[];
   runbook: RunbookStep[];
-  applicationAssets: ApplicationAsset[];
-  roleMappings: RoleMapping[];
+  handoffAssets: HandoffAsset[];
+  capabilities: Capability[];
   operatorNotes: string[];
 }

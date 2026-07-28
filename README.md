@@ -30,9 +30,9 @@ A telecom/service-assurance board that converts network noise into SLA, outage, 
 - [Quality notes](docs/quality-gate.md) lists the local checks, CI surface, and release expectations for this repository.
 - [Enterprise readiness notes](docs/enterprise-readiness.md) outlines security, data, operations, integration, and handoff expectations.
 
-## Resource posture
+## Public Demo Boundary
 
-No other resources are required to ship or demo this project well.
+The public demo runs without external services:
 
 - no API keys
 - no backend server
@@ -40,18 +40,18 @@ No other resources are required to ship or demo this project well.
 - no external dataset
 - no model provider dependency
 
-That is intentional. The project is designed to be a fast, self-contained local proof for a carrier NW application, not a setup-heavy demo that breaks during review.
+The runtime is a deterministic React/Vite simulation, not a live network-management system. Production use requires approved telemetry adapters, identity and access controls, retained audit history, and operator validation.
 
-## Operational Proof Boundary
+## Operational Scope
 
-- **Best fit surfaces:** carrier network operations, service assurance, NOC, transport/core operations, network quality improvement
-- **Strongest proof:** one self-contained control surface that ties access, transport, core, IDC, enterprise SLA risk, and change discipline together
-- **What is real here:** the operations framing, incident workflow, E2E visibility model, premium-path protection logic, and AX-assisted playbook surfaces
-- **What is bounded here:** scenarios are synthetic and deterministic; this is a system-safe operational simulation, not a live carrier network
+- **Intended users:** carrier NOC, service-assurance, transport/core, IDC, and managed network operations teams
+- **Included workflow:** access, transport, core, and IDC posture; SLA impact; priority-path protection; recovery ownership; change gates
+- **Implemented runtime:** deterministic synthetic scenarios, client-side scenario switching, typed domain models, and static Cloudflare deployment
+- **Excluded from the demo:** live telemetry, automated network changes, authentication, persistent incident history, and production SLA reporting
 
 ## Why this project exists
 
-This repo is designed to make one operational story explicit:
+This repo makes one operational model explicit:
 
 1. Network operations language should stay visible, not collapse into generic cloud dashboard copy.
 2. Incident handling and service-quality thinking should become an inspectable product surface.
@@ -70,10 +70,10 @@ This repo is designed to make one operational story explicit:
 - **Command log:** recovery timeline and decision flow
 - **AX assist board:** automation used for classification, prioritization, reroute help, and change gates
 - **Runbook board:** owner-based recovery steps that read like an operator playbook
-- **Operations pack:** 30-second pitch, system note bullet, and system walkthrough angle you can reuse directly
-- **Capability board:** direct mapping to themes like 장애 관리, 품질 개선, E2E 가시성, 운영 프로세스, AX 자동화
+- **Operations pack:** incident brief, shift handoff, and decision principle for the selected scenario
+- **Capability board:** incident response, service quality, E2E visibility, change governance, and deterministic automation
 
-## Why it matches carrier NW operations
+## Carrier Operations Model
 
 The UI and data model deliberately stay close to carrier operations concerns:
 
@@ -84,7 +84,7 @@ The UI and data model deliberately stay close to carrier operations concerns:
 - maintenance and rollback discipline
 - DDoS overlap with change governance
 
-This makes the project a better fit for a network-operations application than a generic AI or data-platform system piece.
+These concepts keep the simulation anchored to service assurance rather than generic infrastructure monitoring.
 
 ## Operator Fast Path
 
@@ -95,7 +95,7 @@ This makes the project a better fit for a network-operations application than a 
 5. Scan the alarm queue and timeline.
 6. Finish on the capability board.
 
-If the walkthrough is short, this path shows service assurance, 장애 대응, and 운영 자동화 thinking quickly.
+This path covers service impact, incident response, and operator-assisted automation without requiring customer data.
 
 ## Quick Start
 
@@ -139,17 +139,11 @@ src/
   test/                UI and utility tests
 ```
 
-## Operational Review Context
+## Private Incident Operations Exercise
 
-Use this repo like this:
+The public workbench remains synthetic and read-only. A private, fixed-scope exercise can adapt the scenario pack, role and handoff map, evidence checklist, and after-action report to an approved operating context without accepting credentials or production payloads through GitHub.
 
-- **Lead with military network operations experience** for 24/7 discipline, 장애 대응, and 보안/권한 통제
-- **Then use this project** to show how that experience translates into a modern service-assurance and quality-operations surface
-- **Only after that**, mention broader projects like `AegisOps` or `ops-reliability-workbench` as supporting evidence for incident architecture, observability, and operator tooling
-
-## Suggested talking point
-
-“이 프로젝트는 통신사 NW 운영 직무에 맞춰 만든 서비스 품질 가시화 워크벤치입니다. Access, transport, core, IDC를 따로 보지 않고 E2E 서비스 영향과 장애 대응, 우선 고객 보호, 유지보수 게이트, 운영 자동화를 한 화면에서 판단하도록 설계했습니다.”
+[Request a private incident exercise](https://kim3310-doeon-kim-portfolio.pages.dev/?offer=nw-service-assurance-workbench&inquiry=incident-operations-exercise#private-inquiry)
 
 ## Cloud + AI Architecture
 
@@ -173,10 +167,10 @@ Use this repo like this:
 
 ## Search And Service Surface
 
-- Public entry: public synthetic network operations demo
-- Paid boundary: paid workspace for service maps, private incident history, and recurring SLA reports
+- Public entry: deterministic synthetic carrier-incident demo
+- Paid boundary: fixed-scope Incident Operations Exercise; production integrations require separate approval
 - Canonical URL: https://nw-service-assurance-workbench.ehdjs1351.workers.dev/
-- Lead capture: https://github.com/KIM3310/nw-service-assurance-workbench/issues/new?template=service-inquiry.yml&title=Private+workspace+inquiry%3A+NW+Service+Assurance+Workbench
+- Lead capture: https://kim3310-doeon-kim-portfolio.pages.dev/?offer=nw-service-assurance-workbench&inquiry=incident-operations-exercise#private-inquiry
 - Commercial route: https://kim3310-doeon-kim-portfolio.pages.dev/?offer=nw-service-assurance-workbench#service-offers
 - Machine-readable offer: [docs/service-offer.json](docs/service-offer.json)
 - Search growth implementation: [docs/search-growth-implementation.md](docs/search-growth-implementation.md)

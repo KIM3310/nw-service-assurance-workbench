@@ -10,23 +10,23 @@ This repository now exposes a search-readable service surface in addition to the
 | Revenue architecture | [docs/revenue-architecture.md](./revenue-architecture.md) |
 | System architecture | [docs/system-architecture.md](./system-architecture.md) |
 | Public canonical URL | https://nw-service-assurance-workbench.ehdjs1351.workers.dev/ |
-| Lead capture URL | https://github.com/KIM3310/nw-service-assurance-workbench/issues/new?template=service-inquiry.yml&title=Private+workspace+inquiry%3A+NW+Service+Assurance+Workbench |
+| Lead capture URL | https://kim3310-doeon-kim-portfolio.pages.dev/?offer=nw-service-assurance-workbench&inquiry=incident-operations-exercise#private-inquiry |
 | Commercial route | https://kim3310-doeon-kim-portfolio.pages.dev/?offer=nw-service-assurance-workbench#service-offers |
 
 ## Search Positioning
 
-- Primary query: NW Service Assurance Workbench network SLA signals
-- Secondary queries: NW Service Assurance Workbench demo; NW Service Assurance Workbench system architecture; NW Service Assurance Workbench business tool; network service assurance workbench with SLA signals, service paths, and incident handoff service
-- Public entry point: public synthetic network operations demo
-- Paid boundary: paid workspace for service maps, private incident history, and recurring SLA reports
+- Primary query: network service assurance incident response workbench
+- Secondary queries: carrier incident response simulation; NOC recovery runbook; 5G service path SLA impact; incident operations exercise
+- Public entry point: deterministic synthetic carrier-incident demo
+- Paid boundary: fixed-scope Incident Operations Exercise; production integrations require separate approval
 
 ## Conversion Boundary
 
-The public surface stays crawlable and free. Paid value starts when a visitor wants private data, saved history, branded export packs, customer-specific connectors, recurring reports, or implementation support.
+The public surface stays crawlable, synthetic, and free. The first paid boundary is a facilitated incident exercise with a scenario pack, role and handoff map, evidence checklist, and after-action report. Live telemetry or production integrations require a separate approved scope.
 
 ## Deployment Notes
 
 - Keep the sitemap and robots file aligned with the final production domain.
 - Submit the canonical URL and sitemap in Google Search Console after the domain is connected.
-- The lead-capture path is a GitHub Issue Form so private workspace and paid-package requests create a trackable queue before payment infrastructure is added.
+- The lead-capture path is the central private inquiry form. Public GitHub issues are not used for confidential scoping.
 - Keep exact free-tier quotas out of public promises because provider limits change.

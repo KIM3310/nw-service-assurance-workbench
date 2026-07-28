@@ -7,11 +7,12 @@ This document turns the repository architecture into a zero-to-low-cost service 
 | Layer | Decision |
 | --- | --- |
 | Target buyer / user | network operations team, MSP, or infrastructure owner tracking SLA and incident recovery |
-| Productized offer | network service assurance workbench with SLA signals, service paths, and incident handoff |
-| First paid SKU | paid workspace for service maps, private incident history, and recurring SLA reports |
-| Free lead magnet | public synthetic network operations demo |
-| Paid expansion | per-team dashboard, report exports, and connector setup for monitoring feeds |
+| Productized offer | deterministic network service assurance workbench for incident triage, service paths, runbooks, and operator handoff |
+| First paid SKU | facilitated Incident Operations Exercise with a scenario pack, role and handoff map, evidence checklist, and after-action report |
+| Free lead magnet | deterministic synthetic carrier-incident demo |
+| Paid expansion | separately scoped monitoring adapters, retained incident history, report exports, and operator access controls |
 | Data / workflow moat | service path model, SLA breach taxonomy, incident recovery history, and operator annotations |
+| Private inquiry | https://kim3310-doeon-kim-portfolio.pages.dev/?offer=nw-service-assurance-workbench&inquiry=incident-operations-exercise#private-inquiry |
 
 ## Free-Tier-First Launch Stack
 
@@ -37,7 +38,7 @@ flowchart LR
   Meter --> Core["Repository core workflow"]
   Core --> AI["Free or customer-key AI inference"]
   Core --> Export["Reports, traces, bundles, or templates"]
-  Export --> Upgrade["Paid SKU: private workspace / support / connector / export pack"]
+  Export --> Upgrade["Paid SKU: Incident Operations Exercise"]
   Upgrade --> Retention["Saved history, private data, team controls, and recurring reports"]
 ```
 
@@ -51,8 +52,8 @@ flowchart LR
 
 ## 30-Day Revenue Test
 
-1. Publish the public demo or architecture page with one clear CTA: request private workspace, download a pack, or run a sample report.
-2. Add a lead capture route using Workers + D1/KV, Supabase, Firebase, or a GitHub issue form.
+1. Publish the public demo or architecture page with one clear CTA: request the Incident Operations Exercise through the central private inquiry route.
+2. Route paid or research interest through the central private inquiry URL before adding checkout infrastructure.
 3. Create one downloadable artifact: report PDF, template pack, runbook, dataset sample, or export bundle.
 4. Offer a fixed-scope paid package before building subscription complexity.
 5. Track activation manually first: visits, CTA clicks, export requests, email replies, and paid pilot conversations.
@@ -69,7 +70,7 @@ flowchart LR
 
 The paid version should not be a different product. It should unlock more trust, privacy, retention, and operational surface area:
 
-- private workspace or local deployment
+- customer-scoped exercise workspace or local deployment
 - saved history and longer retention
 - branded exports or signed evidence bundles
 - connector setup for the customer's systems

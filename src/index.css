@@ -160,6 +160,8 @@ select {
   padding: 0 18px;
   border-radius: 999px;
   text-decoration: none;
+  text-align: center;
+  line-height: 1.35;
   transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
 }
 

@@ -6,7 +6,7 @@ export const scenarios: Scenario[] = [
     title: 'Steady-State Evening Peak',
     summary:
       'Baseline access, transport, core, and IDC posture during an enterprise-heavy evening window with light watch signals and no customer-visible degradation.',
-    strongestFor: '운영 안정성, 유지보수 게이트, VIP 경로 보호를 보여주기 가장 좋음',
+    operationalFocus: 'Baseline stability, maintenance readiness, and priority-path protection',
     commandFocus:
       'Keep E2E visibility across access, metro transport, core, and IDC boundaries while preparing a clean maintenance gate for the late-night change window.',
     operatorDecision:
@@ -219,38 +219,38 @@ export const scenarios: Scenario[] = [
         outcome: 'Shows disciplined operations rather than ad-hoc night work.',
       },
     ],
-    applicationAssets: [
+    handoffAssets: [
       {
-        label: '30-second pitch',
-        text: '이 시나리오는 통신사 NW 운영에서 중요한 안정 운영, 유지보수 게이트, VIP 고객 보호를 한 화면에서 보여줍니다. Access, transport, core, IDC를 따로 보지 않고 서비스 영향까지 연결해 보는 방식이 핵심입니다.',
+        label: 'Incident brief',
+        text: 'Evening traffic remains inside the operating envelope across access, transport, core, and IDC. Watch signals stay below customer-impact thresholds while the team prepares a guarded maintenance window.',
       },
       {
-        label: 'System note bullet',
-        text: 'Built a self-contained service assurance board that links access, transport, core, IDC, maintenance gates, and premium customer path protection in one network-operations surface.',
+        label: 'Shift handoff',
+        text: 'Keep watch-level alarms under observation, preserve protected enterprise paths, and open the change window only after rollback ownership and route stability are confirmed.',
       },
       {
-        label: 'Operational takeaway',
-        text: 'I wanted to show that stable operations are not passive monitoring; they require clean baselines, disciplined maintenance gates, and customer-priority path awareness.',
+        label: 'Decision principle',
+        text: 'Stable operations require a clean baseline, explicit change gates, accountable rollback coverage, and continuous awareness of priority customer paths.',
       },
     ],
-    roleMappings: [
+    capabilities: [
       {
-        keyword: '유무선 네트워크 인프라 안정 운영',
+        keyword: 'Network infrastructure stability',
         proof: 'Access, transport, core, and IDC domains stay visible in one board with clear service impact.',
       },
       {
-        keyword: '장애 관리 및 개선 활동',
-        proof: 'Alarm triage, command timeline, and reroute playbooks show how degradation becomes an action plan.',
+        keyword: 'Incident management and improvement',
+        proof: 'Alarm triage, command timelines, and reroute playbooks turn degradation into an owned action plan.',
       },
       {
-        keyword: 'AX 기반 운영 효율화',
+        keyword: 'Automation-assisted NOC efficiency',
         proof: 'Maintenance gates, watchlist automation, and clustered alarm review reduce manual NOC load.',
       },
     ],
     operatorNotes: [
-      'Reads like a carrier NOC control surface rather than a generic cloud dashboard.',
-      'Keeps networking language at the center: access, transport, core, IDC, SLA, reroute, maintenance.',
-      'Shows operational judgment, not just charts: watch, decide, protect premium paths, and document the change gate.',
+      'All four network domains remain healthy while watch-level signals stay below customer-impact thresholds.',
+      'The 23:00 maintenance window remains closed until route stability, rollback ownership, and staffing are confirmed.',
+      'Priority enterprise circuits remain on protected paths throughout the change preparation period.',
     ],
   },
   {
@@ -258,7 +258,7 @@ export const scenarios: Scenario[] = [
     title: 'Metro Fiber Cut Recovery',
     summary:
       'A construction-related fiber cut degrades 5G backhaul and enterprise leased-line diversity, forcing rapid reroute, field dispatch, and customer-priority handling.',
-    strongestFor: '장애 대응, E2E 영향도, VIP 회선 보호를 가장 강하게 보여주는 대표 시나리오',
+    operationalFocus: 'Fiber-cut containment, end-to-end impact, reroute, and priority-circuit protection',
     commandFocus:
       'Contain the blast radius, stabilize transport and core posture, preserve premium B2B circuits, and issue an operator-readable recovery narrative.',
     operatorDecision:
@@ -489,38 +489,38 @@ export const scenarios: Scenario[] = [
         outcome: 'Connects technical restoration with operational communication and quality control.',
       },
     ],
-    applicationAssets: [
+    handoffAssets: [
       {
-        label: '30-second pitch',
-        text: '이 시나리오는 광선로 절단 상황에서 Access, transport, core, IDC, VIP 회선 영향이 어떻게 이어지는지와, 우회·현장 출동·고객 보호까지 한 번에 보여주는 장애 대응 워크플로우입니다.',
+        label: 'Incident brief',
+        text: 'A metro fiber cut reduces backhaul diversity and raises packet loss. The response reroutes traffic, protects priority circuits, dispatches field support, and freezes non-essential changes.',
       },
       {
-        label: 'System note bullet',
-        text: 'Designed a fiber-cut recovery control surface that turns transport faults into reroute actions, field dispatch, VIP circuit protection, and customer-impact review across access, core, and IDC domains.',
+        label: 'Shift handoff',
+        text: 'Alternate-ring load is elevated but stable. Field repair is active, protected circuits retain reserved headroom, and the change freeze remains in place until congestion clears.',
       },
       {
-        label: 'Operational takeaway',
-        text: 'This is the strongest proof that I think in service-assurance terms: not just where the fault happened, but which customers are exposed, what path stays clean, and when change freeze should hold.',
+        label: 'Decision principle',
+        text: 'Recovery is measured by customer exposure, clean-path capacity, and controlled restoration, not only by whether the damaged link is reachable again.',
       },
     ],
-    roleMappings: [
+    capabilities: [
       {
-        keyword: '장애 관리 및 개선 활동',
-        proof: 'The board shows how a transport fault becomes reroute, field dispatch, VIP protection, and documented recovery.',
+        keyword: 'Incident response and recovery',
+        proof: 'A transport fault becomes a reroute decision, field dispatch, priority-circuit protection, and documented recovery.',
       },
       {
-        keyword: '서비스 품질 모니터링 및 장애 예방',
+        keyword: 'Service quality and risk monitoring',
         proof: 'Metrics, path visibility, and watch alarms distinguish customer-impact risk from device noise.',
       },
       {
-        keyword: 'E2E 가시성 확보',
+        keyword: 'End-to-end service visibility',
         proof: 'One service path connects access, transport, core, IDC, and premium enterprise outcomes.',
       },
     ],
     operatorNotes: [
-      'This is the strongest scenario for a carrier operations system walkthrough because the service blast radius is obvious.',
-      'The app intentionally talks in carrier operations language: reroute, hold-down, VIP circuits, field dispatch, ingress diversity.',
-      'It also translates military-style incident discipline into a carrier NOC surface without sounding generic.',
+      'The fiber cut exposes a shared service path across mobile backhaul and enterprise circuits.',
+      'Emergency reroute capacity is reserved for priority traffic before general optimization begins.',
+      'Field repair, customer-impact communication, and the change freeze remain tied to the same recovery timeline.',
     ],
   },
   {
@@ -528,7 +528,7 @@ export const scenarios: Scenario[] = [
     title: 'IDC Edge DDoS During Planned Change',
     summary:
       'An IDC edge traffic anomaly overlaps with a planned maintenance window, stressing DDoS controls, DNS latency, and change governance at the same time.',
-    strongestFor: 'IDC, 보안, 변경관리, 운영 프로세스까지 묶어 보여주기 좋음',
+    operationalFocus: 'DDoS mitigation, IDC health, change separation, and guarded recovery',
     commandFocus:
       'Separate planned-change noise from real attack indicators, preserve premium paths, and reopen the maintenance lane only after health returns to a stable baseline.',
     operatorDecision:
@@ -759,38 +759,38 @@ export const scenarios: Scenario[] = [
         outcome: 'Shows disciplined process control, not just fast response.',
       },
     ],
-    applicationAssets: [
+    handoffAssets: [
       {
-        label: '30-second pitch',
-        text: '이 시나리오는 IDC 엣지 공격 상황과 계획 작업이 겹쳤을 때, 보안 대응과 운영 프로세스를 어떻게 분리해 판단하는지 보여줍니다. 장애 대응뿐 아니라 변경관리와 품질 통제까지 설명할 수 있습니다.',
+        label: 'Incident brief',
+        text: 'A DDoS event overlaps with planned IDC maintenance. Operators pause non-essential change work, separate attack indicators from change noise, and preserve clean paths for priority traffic.',
       },
       {
-        label: 'System note bullet',
-        text: 'Built an IDC edge operations scenario that separates DDoS indicators from planned-change noise and uses guarded system note gates to protect service quality and premium traffic.',
+        label: 'Shift handoff',
+        text: 'Scrubbing and rate limits are active, DNS latency is recovering, and maintenance stays paused until attack decay, path health, and rollback readiness remain stable for 20 minutes.',
       },
       {
-        label: 'Operational takeaway',
-        text: 'I included this to show that operations quality is also process quality: sometimes the key decision is not rollback vs continue, but how to create a clean boundary for that call.',
+        label: 'Decision principle',
+        text: 'When attack traffic overlaps with planned change, the first control is a clean decision boundary: separate causes, preserve service, then reopen maintenance through explicit gates.',
       },
     ],
-    roleMappings: [
+    capabilities: [
       {
-        keyword: '서버/보안/네트워크 운영 품질 확보',
+        keyword: 'IDC, security, and network operations',
         proof: 'IDC edge, DNS, traffic anomaly, and clean rollback boundaries are managed in one inspection loop.',
       },
       {
-        keyword: '운영 프로세스 관리',
-        proof: 'Maintenance system note gate and attack/change separation show explicit operational discipline.',
+        keyword: 'Change and recovery governance',
+        proof: 'Maintenance gates and attack-versus-change separation enforce an explicit recovery process.',
       },
       {
-        keyword: 'AX 기반 자동화',
-        proof: 'Automation is used for classification, prioritization, and change gating rather than vague chat output.',
+        keyword: 'Deterministic operations automation',
+        proof: 'Automation supports classification, prioritization, and change gating while the operator retains the decision.',
       },
     ],
     operatorNotes: [
-      'This scenario widens the story beyond outages into controlled maintenance, security posture, and change governance.',
-      'It is useful when the inspection path needs DDoS, IDC, or disciplined operations process, not only transport incidents.',
-      'The project stays self-contained with deterministic data, but the operational thinking remains concrete and believable.',
+      'Attack indicators and planned-change noise are evaluated as separate causes before any rollback decision.',
+      'Clean-path capacity and DNS control traffic receive protection while scrubbing remains active.',
+      'Maintenance resumes only after stable telemetry, attack-rate decay, and rollback readiness pass the same gate.',
     ],
   },
 ];
