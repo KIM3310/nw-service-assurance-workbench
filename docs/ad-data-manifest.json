@@ -6,7 +6,7 @@
   "audience": "network operations and service assurance teams",
   "public_resource": {
     "url": "https://kim3310-doeon-kim-portfolio.pages.dev/resources/nw-service-assurance-workbench/",
-    "live_demo": "https://nw-service-assurance-workbench.ehdjs1351.workers.dev",
+    "live_demo": "https://nw-service-assurance-workbench.pages.dev",
     "readiness_checklist": [
       "Architecture Summary",
       "Runtime And Data Flow",

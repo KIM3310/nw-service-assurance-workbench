@@ -5,7 +5,7 @@ Free entry point: deterministic synthetic carrier-incident demo
 Paid boundary: fixed-scope Incident Operations Exercise; live telemetry and production integrations require separate approval
 Runtime boundary: no API key, backend, database, external dataset, model provider, or live network connection is used by the public demo
 Technology: React, TypeScript, Vite, Vitest, Cloudflare Workers Static Assets, and versioned synthetic scenario fixtures
-Canonical URL: https://nw-service-assurance-workbench.ehdjs1351.workers.dev/
+Canonical URL: https://nw-service-assurance-workbench.pages.dev/
 Repository: https://github.com/KIM3310/nw-service-assurance-workbench
 System architecture: https://github.com/KIM3310/nw-service-assurance-workbench/blob/main/docs/system-architecture.md
 Revenue architecture: https://github.com/KIM3310/nw-service-assurance-workbench/blob/main/docs/revenue-architecture.md

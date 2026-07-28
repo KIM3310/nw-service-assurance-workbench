@@ -169,7 +169,7 @@ The public workbench remains synthetic and read-only. A private, fixed-scope exe
 
 - Public entry: deterministic synthetic carrier-incident demo
 - Paid boundary: fixed-scope Incident Operations Exercise; production integrations require separate approval
-- Canonical URL: https://nw-service-assurance-workbench.ehdjs1351.workers.dev/
+- Canonical URL: https://nw-service-assurance-workbench.pages.dev/
 - Lead capture: https://kim3310-doeon-kim-portfolio.pages.dev/?offer=nw-service-assurance-workbench&inquiry=incident-operations-exercise#private-inquiry
 - Resource route: https://kim3310-doeon-kim-portfolio.pages.dev/resources/nw-service-assurance-workbench/
 - Commercial route: https://kim3310-doeon-kim-portfolio.pages.dev/?offer=nw-service-assurance-workbench#service-offers

@@ -1,7 +1,7 @@
 {
   "name": "NW Service Assurance Workbench",
   "slug": "nw-service-assurance-workbench",
-  "canonical_url": "https://nw-service-assurance-workbench.ehdjs1351.workers.dev/",
+  "canonical_url": "https://nw-service-assurance-workbench.pages.dev/",
   "repository_url": "https://github.com/KIM3310/nw-service-assurance-workbench",
   "architecture_url": "https://github.com/KIM3310/nw-service-assurance-workbench/blob/main/docs/system-architecture.md",
   "revenue_architecture_url": "https://github.com/KIM3310/nw-service-assurance-workbench/blob/main/docs/revenue-architecture.md",
@@ -43,7 +43,7 @@
     "name": "NW Service Assurance Workbench",
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "Web browser",
-    "url": "https://nw-service-assurance-workbench.ehdjs1351.workers.dev/",
+    "url": "https://nw-service-assurance-workbench.pages.dev/",
     "codeRepository": "https://github.com/KIM3310/nw-service-assurance-workbench",
     "description": "NW Service Assurance Workbench is a deterministic React demo for 5G access, transport, core, and IDC incident triage, service paths, runbooks, and operator handoff.",
     "featureList": [
@@ -65,7 +65,7 @@
         "price": "0",
         "priceCurrency": "USD",
         "availability": "https://schema.org/InStock",
-        "url": "https://nw-service-assurance-workbench.ehdjs1351.workers.dev/"
+        "url": "https://nw-service-assurance-workbench.pages.dev/"
       },
       {
         "@type": "Offer",
