@@ -9,7 +9,6 @@ A telecom/service-assurance board that converts network noise into SLA, outage, 
 | Area | Details |
 |---|---|
 | Users | Telecom operations, IDC/network operations, managed service teams, and enterprise network owners. |
-| Technical path | Validate the demo, README, architecture notes, and quality gate before deeper workflow review. |
 | System scope | Outage triage, service path visibility, network posture, operator notes, and workflow automation patterns. |
 | Operating boundary | The workbench uses staged scenarios and synthetic service data; production use needs real monitoring adapters and access control. |
 | Evaluation path | Run the local runtime commands and inspect the UI surfaces for service-impact and handoff clarity. |

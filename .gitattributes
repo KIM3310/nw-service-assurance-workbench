@@ -65,3 +65,6 @@
 *.safetensors binary
 *.sqlite binary
 *.wav binary
+
+# Generated publication pages should not override the implementation language.
+public/*.html linguist-generated=true
