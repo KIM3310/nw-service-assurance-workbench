@@ -1,5 +1,7 @@
 # NW Service Assurance Workbench
 
+[![CI](https://github.com/KIM3310/nw-service-assurance-workbench/actions/workflows/ci.yml/badge.svg)](https://github.com/KIM3310/nw-service-assurance-workbench/actions/workflows/ci.yml)
+
 Scenario-driven carrier network operations system project focused on 5G/LTE access-core visibility, transport and IDC incident handling, service-quality review, and AX-assisted NOC playbooks.
 
 ## System Overview
@@ -168,7 +170,7 @@ The public workbench remains synthetic and read-only. A private, fixed-scope exe
 
 - Public entry: deterministic synthetic carrier-incident demo
 - Paid boundary: fixed-scope Incident Operations Exercise; production integrations require separate approval
-- Canonical URL: https://nw-service-assurance-workbench.pages.dev/
+- Canonical URL: https://nw-service-assurance-workbench.ehdjs1351.workers.dev/
 - Lead capture: https://kim3310-doeon-kim-portfolio.pages.dev/?offer=nw-service-assurance-workbench&inquiry=incident-operations-exercise#private-inquiry
 - Resource route: https://kim3310-doeon-kim-portfolio.pages.dev/resources/nw-service-assurance-workbench/
 - Commercial route: https://kim3310-doeon-kim-portfolio.pages.dev/?offer=nw-service-assurance-workbench#service-offers

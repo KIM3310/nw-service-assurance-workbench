@@ -5,7 +5,7 @@ Free entry point: deterministic synthetic carrier-incident demo
 Paid boundary: fixed-scope Incident Operations Exercise; live telemetry and production integrations require separate approval
 Runtime boundary: no API key, backend, database, external dataset, model provider, or live network connection is used by the public demo
 Technology: React, TypeScript, Vite, Vitest, Cloudflare Workers Static Assets, and versioned synthetic scenario fixtures
-Canonical URL: https://nw-service-assurance-workbench.pages.dev/
+Canonical URL: https://nw-service-assurance-workbench.ehdjs1351.workers.dev/
 Repository: https://github.com/KIM3310/nw-service-assurance-workbench
 System architecture: https://github.com/KIM3310/nw-service-assurance-workbench/blob/main/docs/system-architecture.md
 Revenue architecture: https://github.com/KIM3310/nw-service-assurance-workbench/blob/main/docs/revenue-architecture.md
@@ -15,8 +15,8 @@ Commercial route: https://kim3310-doeon-kim-portfolio.pages.dev/?offer=nw-servic
 
 Use this project to inspect access, transport, core, and IDC service impact; prioritized alarms; recovery ownership; change gates; and concise operator handoff notes.
 # ADSENSE-PUBLICATION:START
-Editorial guide: https://nw-service-assurance-workbench.pages.dev/guide
-Architecture article: https://nw-service-assurance-workbench.pages.dev/architecture
-Verification article: https://nw-service-assurance-workbench.pages.dev/verification
-Publisher information: https://nw-service-assurance-workbench.pages.dev/publisher
+Editorial guide: https://nw-service-assurance-workbench.ehdjs1351.workers.dev/guide
+Architecture article: https://nw-service-assurance-workbench.ehdjs1351.workers.dev/architecture
+Verification article: https://nw-service-assurance-workbench.ehdjs1351.workers.dev/verification
+Publisher information: https://nw-service-assurance-workbench.ehdjs1351.workers.dev/publisher
 # ADSENSE-PUBLICATION:END
