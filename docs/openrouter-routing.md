@@ -18,7 +18,7 @@ OPENROUTER_BASE_URL=https://openrouter.ai/api/v1
 OPENROUTER_MODEL=openai/gpt-5.4-mini
 OPENROUTER_FALLBACK_MODEL=google/gemini-3.5-flash
 OPENROUTER_ECONOMY_MODEL=openrouter/free
-OPENROUTER_HTTP_REFERER=https://nw-service-assurance-workbench.pages.dev
+OPENROUTER_HTTP_REFERER=https://nw-service-assurance-workbench.ehdjs1351.workers.dev
 OPENROUTER_APP_TITLE=nw-service-assurance-workbench
 ```
 
